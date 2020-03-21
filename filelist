@@ -27,3 +27,5 @@
 .config/polybar/scripts/dropbox_status.sh:desktop
 .config/polybar/scripts/updates_arch_combined.sh:desktop
 
+# Xresources
+.Xresources:desktop
