@@ -4,7 +4,14 @@
 
 # COMMON
 
+# vim
 .vimrc
 
+# zsh
 .zshrc
-# .oh-my-zsh
+.aliases
+
+# custom oh-my-zsh stuff
+.oh-my-zsh/custom/themes/gnzh.zsh-theme
+
+

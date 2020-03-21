@@ -1,0 +1,5 @@
+# custom aliases
+
+alias gs='git status'
+alias lc='ls -ld $HOME/.?*'
+alias lcs="ls -ld $HOME/.?* | tr -s ' ' | cut -d ' ' -f9"
