@@ -14,6 +14,10 @@
 # custom oh-my-zsh stuff
 .oh-my-zsh/custom/themes/gnzh.zsh-theme
 
+
+# i3
+.i3/config:desktop
+
 # polybar
 
 .config/polybar/launch.sh
