@@ -5,3 +5,6 @@
 # COMMON
 
 .vimrc
+
+.zshrc
+# .oh-my-zsh
