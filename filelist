@@ -14,4 +14,12 @@
 # custom oh-my-zsh stuff
 .oh-my-zsh/custom/themes/gnzh.zsh-theme
 
+# polybar
+
+.config/polybar/launch.sh
+.config/polybar/scripts/chrome_current_track.sh
+
+.config/polybar/config:desktop
+.config/polybar/scripts/dropbox_status.sh:desktop
+.config/polybar/scripts/updates_arch_combined.sh:desktop
 
