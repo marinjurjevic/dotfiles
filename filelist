@@ -2,8 +2,6 @@
 #### DOT FILES ####
 ###################
 
-# COMMON
-
 # vim
 .vimrc
 
@@ -17,6 +15,7 @@
 
 # i3
 .i3/config:desktop
+.i3/config:laptop
 
 # polybar
 
@@ -24,8 +23,12 @@
 .config/polybar/scripts/chrome_current_track.sh
 
 .config/polybar/config:desktop
+.config/polybar/config:laptop
+
 .config/polybar/scripts/dropbox_status.sh:desktop
 .config/polybar/scripts/updates_arch_combined.sh:desktop
 
+
 # Xresources
 .Xresources:desktop
+.Xresources:laptop
