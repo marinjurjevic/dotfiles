@@ -2,6 +2,7 @@
 #### DOT FILES ####
 ###################
 
+desktop=common,desktop
 laptop=common,laptop
 
 # vim
