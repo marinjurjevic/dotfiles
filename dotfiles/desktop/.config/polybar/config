@@ -12,6 +12,9 @@ light_green = #afffaf
 ; army green
 army_green = #4b5320
 
+; orange
+orange = #ff5733
+
 ; shared inactive icon
 inactive = #444444
 
@@ -27,7 +30,7 @@ value_very_high = #ff5555
 
 ; volume bar colors
 ; old (pink) #f200ff / #be3dff
-volume_bar = ${colors.army_green}
+volume_bar = ${colors.light_green}
 volume_muted = $ff5555
 
 ; bar empty
@@ -41,7 +44,7 @@ i3_urgent_uline = #bd2c40
 
 ; title 
 title_bg = ${colors.army_green}
-title_fg = ${colors.army_green}
+title_fg = ${colors.orange}
 
 ; power menu
 power = #fc6060
@@ -71,7 +74,7 @@ reddit = #ff4500
 vscode = #0076bf
 
 ; current chrome track
-chrome_track = ${colors.army_green}
+chrome_track = ${colors.light_green}
 
 ; --------------------------------
 ; ----------- TOP BAR ------------ 
@@ -469,7 +472,7 @@ type = internal/xwindow
 ;   <label> (default)
 format = <label>
 ; format-background = ${colors.title_bg}
-format-foreground = ${colors.army_green}
+format-foreground = ${colors.title_fg}
 format-padding = 1
 
 ; Available tokens:
