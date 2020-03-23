@@ -2,6 +2,8 @@
 #### DOT FILES ####
 ###################
 
+laptop=common,laptop
+
 # vim
 .vimrc
 
@@ -15,11 +17,13 @@
 
 # i3
 .i3/config:desktop
-.i3/config:laptop
+.config/i3/config:laptop
 
 # polybar
 
-.config/polybar/launch.sh
+.config/polybar/launch.sh:desktop
+.config/polybar/launch.sh:laptop
+
 .config/polybar/scripts/chrome_current_track.sh
 
 .config/polybar/config:desktop
