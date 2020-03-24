@@ -9,6 +9,9 @@
 ; light green
 light_green = #afffaf
 
+; light_blue
+light_blue = #12c8ff
+
 ; army green
 army_green = #4b5320
 
@@ -48,7 +51,7 @@ title_fg = ${colors.orange}
 
 ; power menu
 power = #fc6060
-lock = #12c8ff
+lock = ${colors.light_blue}
 reboot = #fbd022
 shutdown = #ff5555
 
@@ -81,6 +84,15 @@ chrome_track = ${colors.light_green}
 
 ; battery
 batt_full = #12c8ff
+
+; ethernet
+ethernet_connected = ${colors.orange}
+
+; vpn
+vpn_connected = ${colors.light_green}
+
+; wifi
+wifi_connected = ${colors.light_blue}
 
 ; --------------------------------
 ; ----------- TOP BAR ------------ 
@@ -126,7 +138,7 @@ width = 100%
 height = 25
 dpi = 92
 
-modules-left = i3 
+modules-left = i3 ethernet wifi vpn
 modules-right = cpu memory filesystem current-keyboard-layout date battery backlight powermenu 
 
 wm-restack = i3
@@ -220,23 +232,50 @@ ramp-7 = 
 [module/ethernet]
 type = internal/network
 
-interface = enp3s0
+interface = enp0s31f6
 
 format-connected = <label-connected>
-label-connected = 囹 %local_ip% %downspeed% %upspeed%
+format-connected-prefix = 囹
+format-connected-prefix-foreground = ${colors.ethernet_connected}
+format-connected-prefix-padding = 2
+label-connected = %local_ip% %downspeed% %upspeed%
 label-connected-foreground = ${colors.bar_fg}
-label-connected-font = 1
 
-; CURRENTLY NOT WORKING, WAITING FOR UPDATE
+format-disconnected = <label-disconnected>
+label-disconnected = 囹
+label-disconnected-foreground = ${colors.inactive}
+
+[module/wifi]
+type = internal/network
+
+interface = wlp1s0
+
+format-connected = <label-connected>
+format-connected-prefix = 
+format-connected-prefix-foreground = ${colors.wifi_connected}
+format-connected-prefix-padding = 2
+label-connected = %essid% %local_ip% %downspeed% %upspeed% 
+
+format-disconnected = <label-disconnected>
+label-disconnected = 
+label-disconnected-foreground = ${colors.inactive}
+
 [module/vpn]
 type = internal/network
 
 interface = tun0
 
 format-connected = <label-connected>
-label-connected = 賓 %local_ip% %downspeed% %upspeed%
-label-connected-foreground = ${colors.bar_fg}
-label-connected-font = 1
+format-connected-prefix = 賓
+format-connected-prefix-foreground = ${colors.vpn_connected}
+format-connected-prefix-padding = 1
+; label-connected = %local_ip% %downspeed% %upspeed%
+label-connected = %local_ip% 
+
+format-disconnected = <label-disconnected>
+label-disconnected = 賓
+label-disconnected-foreground = ${colors.inactive}
+
 
 [module/cpu]
 type = internal/cpu
