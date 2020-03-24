@@ -20,6 +20,9 @@ laptop=common,laptop
 .i3/config:desktop
 .config/i3/config:laptop
 
+# rofi
+.config/rofi
+
 # polybar
 
 .config/polybar/launch.sh:desktop
