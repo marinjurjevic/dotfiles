@@ -2,5 +2,8 @@
 # ssh keys
 .ssh
 
+# certificates
+.cert
+
 # bytelab internal config
 .config/bytelab
