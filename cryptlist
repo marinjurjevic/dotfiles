@@ -1,0 +1,6 @@
+
+# ssh keys
+.ssh
+
+# bytelab internal config
+.config/bytelab
