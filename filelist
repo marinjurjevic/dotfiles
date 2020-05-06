@@ -18,15 +18,20 @@ laptop=common,laptop
 # custom oh-my-zsh stuff
 .oh-my-zsh/custom/themes/gnzh.zsh-theme
 
-
 # i3
 .i3/config
+
+# Xresources
+.Xresources
+
+#-----------#
+# .config/* #
+#-----------#
 
 # rofi
 .config/rofi
 
 # polybar
-
 .config/polybar/launch.sh:desktop
 .config/polybar/launch.sh:laptop
 
@@ -38,6 +43,8 @@ laptop=common,laptop
 .config/polybar/scripts/dropbox_status.sh:desktop
 .config/polybar/scripts/updates_arch_combined.sh:desktop
 
+# chrome
+.config/chrome-flags.conf
 
-# Xresources
-.Xresources
+
+
