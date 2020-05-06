@@ -17,8 +17,7 @@ laptop=common,laptop
 
 
 # i3
-.i3/config:desktop
-.config/i3/config:laptop
+.i3/config
 
 # rofi
 .config/rofi
@@ -38,5 +37,4 @@ laptop=common,laptop
 
 
 # Xresources
-.Xresources:desktop
-.Xresources:laptop
+.Xresources

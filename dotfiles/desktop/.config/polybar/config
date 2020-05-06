@@ -98,7 +98,7 @@ foreground = ${colors.bar_fg}
 
 spacing = 0
 padding-right = 1
-module-margin-left = 0 
+module-margin-left = 1
 ; module-margin-right = 2
 underline-size = 2
 
@@ -118,7 +118,7 @@ width = 100%
 height = 25
 dpi = 92
 
-modules-left = i3 ethernet
+modules-left = i3 ethernet vpn
 modules-right = cpu memory temperature filesystem current-keyboard-layout date updates-arch-combined dropbox powermenu 
 
 wm-restack = i3
@@ -163,7 +163,7 @@ type = internal/network
 interface = enp3s0
 
 format-connected = <label-connected>
-label-connected = 囹 %local_ip% %downspeed% %upspeed%
+label-connected = 囹  %local_ip% %downspeed% %upspeed%
 label-connected-foreground = ${colors.bar_fg}
 label-connected-font = 1
 
@@ -281,7 +281,7 @@ format-prefix = "ﭵ "
 format-prefix-foreground = ${colors.chrome_track}
 ; format-label-prefix-font = 3
 label = %output%
-label-font = 4
+label-font = 2
 label-foreground = ${colors.chrome_track}
 label-padding = 0
 label-maxlen = 50
@@ -294,7 +294,7 @@ interval = 1
 type = custom/script
 
 format = <label>
-label =  %output%
+label =   %output%
 label-font = 1
 label-foreground = ${colors.keyboard}
 ; label-padding = 0
@@ -479,7 +479,7 @@ format-padding = 1
 ;   %title%
 ; Default: %title%
 label = %title%
-label-font = 4
+label-font = 2
 label-maxlen = 100
 
 ; Used instead of label when there is no window title
