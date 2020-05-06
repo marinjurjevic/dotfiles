@@ -5,6 +5,9 @@
 desktop=common,desktop
 laptop=common,laptop
 
+# profile
+.profile
+
 # vim
 .vimrc
 
