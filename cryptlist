@@ -1,6 +1,9 @@
+desktop=common,desktop
+laptop=common,laptop
 
 # ssh keys
-.ssh
+.ssh:desktop
+.ssh:laptop
 
 # certificates
 .cert
