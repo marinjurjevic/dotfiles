@@ -35,13 +35,10 @@ laptop=common,laptop
 .config/polybar/launch.sh:desktop
 .config/polybar/launch.sh:laptop
 
-.config/polybar/scripts/chrome_current_track.sh
-
 .config/polybar/config:desktop
 .config/polybar/config:laptop
 
-.config/polybar/scripts/dropbox_status.sh:desktop
-.config/polybar/scripts/updates_arch_combined.sh:desktop
+.config/polybar/scripts
 
 # chrome
 .config/chrome-flags.conf
