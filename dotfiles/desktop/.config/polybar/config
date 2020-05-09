@@ -9,6 +9,9 @@
 ; light green
 light_green = #afffaf
 
+; light_blue
+light_blue = #12c8ff
+
 ; army green
 army_green = #4b5320
 
@@ -23,9 +26,9 @@ bar_fg= #eee
 
 ; performance bar/ramp colors
 value_very_low = #aaff77
-value_low = #fbf022
+value_low = #e2ff00
 value_medium = #fbd022
-value_high = #fba922
+value_high = #ff8900
 value_very_high = #ff5555
 
 ; volume bar colors
@@ -48,7 +51,7 @@ title_fg = ${colors.orange}
 
 ; power menu
 power = #fc6060
-lock = #12c8ff
+lock = ${colors.light_blue}
 reboot = #fbd022
 shutdown = #ff5555
 
@@ -75,6 +78,15 @@ vscode = #0076bf
 
 ; current chrome track
 chrome_track = ${colors.light_green}
+
+; ethernet
+ethernet_connected = ${colors.orange}
+
+; vpn
+vpn_connected = ${colors.light_green}
+
+; wifi
+wifi_connected = ${colors.light_blue}
 
 ; --------------------------------
 ; ----------- TOP BAR ------------ 
@@ -105,8 +117,6 @@ underline-size = 2
 font-0 = TerminessTTFNerdFont:size=12;2
 font-1 = TerminessTTFNerdFontMono:size=15;2 
 font-2 = TerminessTTFNerdFontMono:size=22;4
-font-3 = DejaVuSansMono:size=12;2
-
 
 ; --------------------------------
 ; ---------- BOTTOM BAR ---------- 
@@ -163,20 +173,46 @@ type = internal/network
 interface = enp3s0
 
 format-connected = <label-connected>
-label-connected = 囹  %local_ip% %downspeed% %upspeed%
+format-connected-prefix = 囹
+format-connected-prefix-foreground = ${colors.ethernet_connected}
+format-connected-prefix-padding = 2
+label-connected = %local_ip% %downspeed% %upspeed%
 label-connected-foreground = ${colors.bar_fg}
-label-connected-font = 1
 
-; CURRENTLY NOT WORKING, WAITING FOR UPDATE
+format-disconnected = <label-disconnected>
+label-disconnected = 囹
+label-disconnected-foreground = ${colors.inactive}
+
+[module/wifi]
+type = internal/network
+
+interface = wlp1s0
+
+format-connected = <label-connected>
+format-connected-prefix = 
+format-connected-prefix-foreground = ${colors.wifi_connected}
+format-connected-prefix-padding = 2
+label-connected = %essid% %local_ip% %downspeed% %upspeed% 
+
+format-disconnected = <label-disconnected>
+label-disconnected = 
+label-disconnected-foreground = ${colors.inactive}
+
 [module/vpn]
 type = internal/network
 
 interface = tun0
 
 format-connected = <label-connected>
-label-connected = 賓 %local_ip% %downspeed% %upspeed%
-label-connected-foreground = ${colors.bar_fg}
-label-connected-font = 1
+format-connected-prefix = 賓
+format-connected-prefix-foreground = ${colors.vpn_connected}
+format-connected-prefix-padding = 1
+; label-connected = %local_ip% %downspeed% %upspeed%
+label-connected = %local_ip% 
+
+format-disconnected = <label-disconnected>
+label-disconnected = 賓
+label-disconnected-foreground = ${colors.inactive}
 
 [module/cpu]
 type = internal/cpu
