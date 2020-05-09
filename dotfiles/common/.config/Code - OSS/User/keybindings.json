@@ -1,0 +1,42 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+l",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+
+    // Toggle between terminal and editor focus
+    { 
+        "key": "ctrl+`", 
+        "command": "workbench.action.terminal.focus"
+    },
+    { 
+        "key": "ctrl+`", 
+        "command": "workbench.action.focusActiveEditorGroup", 
+        "when": "terminalFocus"
+    },
+    { 
+        "key": "cmd+shift+j", 
+        "command": "workbench.action.terminal.focusNext" 
+    },
+    { 
+        "key": "cmd+shift+k", 
+        "command": "workbench.action.terminal.focusPrevious" 
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    }
+]

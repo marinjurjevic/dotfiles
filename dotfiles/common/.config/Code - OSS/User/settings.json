@@ -1,0 +1,42 @@
+{
+    "terminal.integrated.commandsToSkipShell": [
+        // Ensure the toggle sidebar visibility keybinding skips the shell
+        "workbench.action.toggleSidebarVisibility",
+        // Send quick open's keybinding to the shell
+        "-workbench.action.quickOpen",
+    ],
+	
+    "workbench.colorTheme": "Taurus",
+    "liveServer.settings.donotShowInfoMsg": true,
+
+    "terminal.external.linuxExec": "urxvt",
+    "terminal.integrated.fontFamily": "TerminessTTF Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "TerminessTTF Nerd Font",
+    "editor.fontWeight": "bold",
+
+    "editor.tabSize": 2,
+    "workbench.iconTheme": "ayu",
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+    "C_Cpp.updateChannel": "Insiders",
+
+    "cortex-debug.armToolchainPath": "/usr/bin",
+    "cortex-debug.armToolchainPrefix": "arm-none-eabi",
+    "cortex-debug.openocdPath": "/usr/bin/openocd",
+    "explorer.confirmDragAndDrop": false,
+    "idf.showOnboardingOnInit": false,
+    "idf.pythonSystemBinPath": "/usr/bin/python",
+    "idf.espIdfPath": "/home/marin/esp-idf",
+    "idf.toolsPath": "/home/marin/.espressif",
+    "idf.pythonBinPath": "/home/marin/.espressif/python_env/idf4.0_py3.8_env/bin/python",
+    "idf.customExtraPaths": "/home/marin/.espressif/python_env/idf4.0_py3.8_env/bin:/usr/bin:/home/marin/.espressif/tools/xtensa-esp32-elf/esp32-2019r1-8.2.0/xtensa-esp32-elf/bin:/home/marin/.espressif/tools/xtensa-esp32s2-elf/esp32s2-dev-4-g3a626e9-8.2.0/xtensa-esp32s2-elf/bin:/home/marin/.espressif/tools/esp32ulp-elf/2.28.51.20170517/esp32ulp-elf-binutils/bin:/home/marin/.espressif/tools/openocd-esp32/v0.10.0-esp32-20190708/openocd-esp32/bin",
+    "idf.customExtraVars": "{\"OPENOCD_SCRIPTS\":\"/home/marin/.espressif/tools/openocd-esp32/v0.10.0-esp32-20190708/openocd-esp32/share/openocd/scripts\"}",
+    "idf.port": "/dev/ttyUSB0",
+    "java.codeGeneration.generateComments": true,
+    "java.codeGeneration.hashCodeEquals.useJava7Objects": true,
+    "java.codeGeneration.hashCodeEquals.useInstanceof": true,
+    "java.codeGeneration.useBlocks": true,
+    "java.home": "/usr/lib/jvm/java-13-openjdk/",
+    "java.semanticHighlighting.enabled": true
+}
