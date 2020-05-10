@@ -44,6 +44,6 @@ laptop=common,laptop
 .config/chrome-flags.conf
 
 # code
-.config/Code\ -\ OSS/User/settings.json
-.config/Code\ -\ OSS/User/keybindings.json
+.config/Code/User/settings.json
+.config/Code/User/keybindings.json
 
