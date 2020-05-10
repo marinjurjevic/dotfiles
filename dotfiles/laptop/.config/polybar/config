@@ -137,7 +137,7 @@ height = 25
 dpi = 92
 
 modules-left = i3 ethernet wifi vpn
-modules-right = cpu memory filesystem current-keyboard-layout date battery backlight dropbox powermenu 
+modules-right = cpu memory filesystem current-keyboard-layout date battery updates-arch-combined dropbox backlight powermenu 
 
 wm-restack = i3
 
