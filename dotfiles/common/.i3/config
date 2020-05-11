@@ -461,6 +461,9 @@ assign [class="Hamsket"] $ws1
 assign [class="Google-chrome"] $ws4
 assign [class="Pcmanfm"] $ws2
 
+# enable floating mode
+for_window [class="nrfconnect"] floating enable
+
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail

@@ -28,6 +28,12 @@ laptop=common,laptop
 # .config/* #
 #-----------#
 
+# autorandr
+.config/autorandr:laptop
+
+# picom 
+.config/picom/picom.conf
+
 # rofi
 .config/rofi
 
