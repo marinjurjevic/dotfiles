@@ -17,6 +17,7 @@ laptop=common,laptop
 
 # custom oh-my-zsh stuff
 .oh-my-zsh/custom/themes/gnzh.zsh-theme
+.oh-my-zsh/custom/plugins/zsh-docker-aliases
 
 # i3
 .i3/config
