@@ -255,6 +255,7 @@ format-connected-prefix-padding = 2
 label-connected = %essid% %local_ip% %downspeed% %upspeed% 
 
 format-disconnected = <label-disconnected>
+format-disconnected-padding = 2
 label-disconnected = 
 label-disconnected-foreground = ${colors.inactive}
 
@@ -266,7 +267,7 @@ interface = tun0
 format-connected = <label-connected>
 format-connected-prefix = 賓
 format-connected-prefix-foreground = ${colors.vpn_connected}
-format-connected-prefix-padding = 1
+format-connected-prefix-padding = 2
 ; label-connected = %local_ip% %downspeed% %upspeed%
 label-connected = %local_ip% 
 
