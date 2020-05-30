@@ -22,6 +22,9 @@ laptop=common,laptop
 # i3
 .i3/config
 
+# urxvt extensions
+.urxvt/ext
+
 # Xresources
 .Xresources
 
