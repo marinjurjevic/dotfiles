@@ -57,3 +57,5 @@ laptop=common,laptop
 .config/Code/User/settings.json
 .config/Code/User/keybindings.json
 
+# Qt4 theme
+.config/Trolltech.conf

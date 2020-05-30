@@ -398,6 +398,9 @@ mode "$mode_gaps_outer" {
 ## CUSTOM ##
 ############
 
+# remove titlebar
+for_window [class="^.*"] border pixel 1
+
 # map workspaces on monitors
 workspace $ws1 output eDP1
 workspace $ws2 output eDP1
@@ -476,4 +479,5 @@ set $ws5 5
 set $ws6 6
 set $ws7 7
 set $ws8 8
+
 
