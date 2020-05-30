@@ -28,6 +28,9 @@ laptop=common,laptop
 # Xresources
 .Xresources
 
+# custom icons
+.local/share/icons/URxvt.png
+
 #-----------#
 # .config/* #
 #-----------#
