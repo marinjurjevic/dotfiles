@@ -195,8 +195,9 @@ format-connected-prefix-padding = 2
 label-connected = %essid% %local_ip% %downspeed% %upspeed% 
 
 format-disconnected = <label-disconnected>
-label-disconnected = 
-label-disconnected-foreground = ${colors.inactive}
+format-disconnected-prefix = 
+format-disconnected-foreground = ${colors.inactive}
+label-disconnected = " "
 
 [module/vpn]
 type = internal/network
@@ -211,8 +212,9 @@ format-connected-prefix-padding = 1
 label-connected = %local_ip% 
 
 format-disconnected = <label-disconnected>
-label-disconnected = 賓
-label-disconnected-foreground = ${colors.inactive}
+format-disconnected-prefix = 賓
+format-disconnected-prefix-foreground = ${colors.inactive}
+label-disconnected = " "
 
 [module/cpu]
 type = internal/cpu
