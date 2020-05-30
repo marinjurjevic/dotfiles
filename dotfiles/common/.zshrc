@@ -68,7 +68,13 @@ ZSH_THEME="gnzh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker zsh-docker-aliases)
+plugins=(
+  archlinux
+  autojump
+  docker
+  git
+  zsh-docker-aliases
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,3 +107,7 @@ export TERM="xterm-256color"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
