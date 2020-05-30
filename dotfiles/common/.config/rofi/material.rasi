@@ -3,7 +3,7 @@ configuration {
   font: "TerminessTTFNerdFont Bold 12";
   drun-display-format: "{icon} {name}";
   display-run: " ";
-  display-ssh: " ";
+  display-ssh: " ";
   display-window: " ";
   modi: "window,run,ssh";
 }
