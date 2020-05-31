@@ -64,6 +64,9 @@ laptop=common,laptop
 
 .config/polybar/scripts
 
+# cava - audio visualizer
+.config/cava/config
+
 # chrome
 .config/chrome-flags.conf
 
