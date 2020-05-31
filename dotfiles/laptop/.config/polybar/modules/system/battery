@@ -1,0 +1,34 @@
+[module/battery]
+type = internal/battery
+
+; full-at = 78
+
+battery = BAT0
+adapter = AC
+
+poll-interval = 5
+
+format-charging = <animation-charging>  <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+label-full = %percentage%%
+label-full-foreground = ${colors.batt_full}
+
+ramp-capacity-0 =
+ramp-capacity-0-foreground = ${colors.value_very_high}
+ramp-capacity-1 = 
+ramp-capacity-1-foreground = ${colors.value_high}
+ramp-capacity-2 = 
+ramp-capacity-2-foreground = ${colors.value_medium}
+ramp-capacity-3 = 
+ramp-capacity-3-foreground = ${colors.value_low}
+ramp-capacity-4 = 
+ramp-capacity-4-foreground = ${colors.value_very_low}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = #12c8ff
+animation-charging-framerate = 750
+

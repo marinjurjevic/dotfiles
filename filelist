@@ -52,6 +52,7 @@ laptop=common,laptop
 .config/polybar/config:laptop
 
 .config/polybar/modules/system:desktop
+.config/polybar/modules/system:laptop
 
 # polybar - common
 .config/polybar/modules/colors
