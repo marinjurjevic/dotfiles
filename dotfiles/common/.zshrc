@@ -73,8 +73,12 @@ plugins=(
   autojump
   docker
   git
+  zsh-autosuggestions
+  zsh-completions
   zsh-docker-aliases
 )
+
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
