@@ -1,0 +1,11 @@
+[module/google-chrome]
+type = custom/text
+content = 
+; content = 
+content-font-0 = 3
+content-foreground = ${colors.light_green}
+content-padding = 1
+
+click-left = google-chrome google.com &
+click-middle = google-chrome --incognito &
+click-right = google-chrome google.com --new-window &

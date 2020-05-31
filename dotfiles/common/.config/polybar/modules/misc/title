@@ -1,0 +1,16 @@
+[module/title]
+type = internal/xwindow
+
+; Available tags:
+;   <label> (default)
+format = <label>
+format-foreground = ${colors.orange}
+format-padding = 1
+
+; Available tokens:
+;   %title%
+; Default: %title%
+label = %title%
+label-font = 2
+label-maxlen = 100
+

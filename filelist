@@ -44,12 +44,20 @@ laptop=common,laptop
 # rofi
 .config/rofi
 
-# polybar
+# polybar - machine specific
 .config/polybar/launch.sh:desktop
 .config/polybar/launch.sh:laptop
 
 .config/polybar/config:desktop
 .config/polybar/config:laptop
+
+.config/polybar/modules/system:desktop
+
+# polybar - common
+.config/polybar/modules/colors
+.config/polybar/modules/i3
+.config/polybar/modules/misc
+.config/polybar/modules/icon_launchers
 
 .config/polybar/scripts
 

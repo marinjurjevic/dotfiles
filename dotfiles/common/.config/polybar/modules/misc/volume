@@ -1,0 +1,40 @@
+[colors]
+
+; volume bar colors
+volume_bar = ${colors.light_green}
+volume_muted = $ff5555
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; volume on
+format-volume = <label-volume> <bar-volume>
+format-volume-foreground = ${colors.volume_bar}
+
+label-volume = 
+; label-volume-padding-right = 2
+; label-volume-padding-left = 2
+label-volume-font = 3
+
+bar-volume-width = 10
+; bar-volume-foreground-0 =
+bar-volume-indicator = ▆
+bar-volume-indicator-font = 2
+; bar-volume-indicator-foreground = ${colors.volume_bar}
+bar-volume-fill = ▆
+bar-volume-fill-font = 2
+bar-volume-empty = ▆
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.empty_bar}
+
+click-right = pavucontrol &
+
+; volume off - muted
+
+format-muted = <label-muted> <bar-volume>
+format-muted-foreground = ${colors.volume_muted}
+label-muted = 
+; label-muted-padding-right = 2
+; label-muted-padding-left = 2
+label-muted-font = 3
+

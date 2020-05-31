@@ -1,0 +1,9 @@
+[module/youtube]
+type = custom/text
+content = 
+content-font-0 = 3
+content-foreground = #ff0000
+content-padding = 1
+
+click-left = google-chrome youtube.com &
+click-right = google-chrome youtube.com --new-window &

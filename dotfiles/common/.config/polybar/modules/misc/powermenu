@@ -1,0 +1,47 @@
+[colors]
+
+power = #fc6060
+lock = ${colors.light_blue}
+reboot = #fbd022
+shutdown = #ff5555
+
+[module/powermenu]
+type = custom/menu
+
+; format-padding = 0
+format-font = 3
+
+label-open-font = 3
+label-open-foreground = ${colors.power}
+label-open = 
+label-close-font = 3
+label-close-foreground = ${colors.power}
+label-close = 
+label-close-underline = ${colors.power}
+label-separator-font = 3
+label-separator = |
+
+menu-0-0 = Lock
+menu-0-0-foreground = ${colors.lock}
+menu-0-0-exec = i3exit lock
+menu-0-1 = Reboot
+menu-0-1-foreground = ${colors.reboot}
+menu-0-1-exec = menu-open-1
+menu-0-2 = Power off
+menu-0-2-foreground = ${colors.shutdown}
+menu-0-2-exec = menu-open-2
+
+menu-1-0 = Reboot
+menu-1-0-foreground = ${colors.reboot}
+menu-1-0-exec = i3exit reboot
+menu-1-1 = Cancel
+menu-1-1-foreground = ${colors.reboot}
+menu-1-1-exec = menu-open-0
+
+menu-2-0 = Power off
+menu-2-0-foreground = ${colors.power}
+menu-2-0-exec = i3exit shutdown
+menu-2-1 = Cancel
+menu-2-1-foreground = ${colors.power}
+menu-2-1-exec = menu-open-0
+
