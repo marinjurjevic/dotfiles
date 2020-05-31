@@ -448,6 +448,9 @@ bindsym $mod+s exec --no-startup-id rofi -show ssh
 # Lock screen
 bindsym $mod+9 exec --no-startup-id blurlock
 
+# toggle all polybars visibility
+bindsym $mod+F11 exec polybar-msg cmd toggle
+
 
 ## override move/focus with vim commands
 bindsym $mod+h focus left
