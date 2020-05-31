@@ -47,9 +47,11 @@ laptop=common,laptop
 # polybar - machine specific
 .config/polybar/launch.sh:desktop
 .config/polybar/launch.sh:laptop
+.config/polybar/launch_home.sh:laptop
 
 .config/polybar/config:desktop
 .config/polybar/config:laptop
+.config/polybar/config_home:laptop
 
 .config/polybar/modules/system:desktop
 .config/polybar/modules/system:laptop

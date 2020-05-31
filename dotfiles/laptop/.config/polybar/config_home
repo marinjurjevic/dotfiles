@@ -49,7 +49,6 @@ dpi = 92
 
 modules-left = google-chrome outlook youtube reddit vscode
 modules-center = title
-modules-right = chrome-current-track pulseaudio
 
 background = ${colors.bar_transparent}
 foreground = ${colors.bar_fg}
@@ -79,7 +78,7 @@ height = 25
 dpi = 92
 
 modules-left = i3 ethernet wifi vpn
-modules-right = cpu memory filesystem current-keyboard-layout date battery updates-arch-combined dropbox backlight powermenu 
+modules-right = cpu memory 
 
 wm-restack = i3
 
@@ -112,3 +111,82 @@ module-margin-right = 2
 font-0 = TerminessTTFNerdFont:style=Bold:size=11;2
 font-1 = TerminessTTFNerdFontMono:size=15;2 
 font-2 = TerminessTTFNerdFontMono:size=18;4
+
+; --------------------------------
+; ----------- TOP BAR 2 ---------- 
+; --------------------------------
+
+[bar/top2]
+monitor = ${env:MONITOR:}
+enable-ipc = true
+bottom = false
+width = 100%
+height = 25
+dpi = 92
+
+modules-center = title
+modules-right = chrome-current-track pulseaudio
+
+background = ${colors.bar_transparent}
+foreground = ${colors.bar_fg}
+
+;line-color = ${bar/bottom.background}
+;line-size = 2
+
+spacing = 0
+padding-right = 1
+module-margin-left = 1
+underline-size = 2
+
+font-0 = TerminessTTFNerdFont:size=11;2
+font-1 = TerminessTTFNerdFontMono:size=15;2 
+font-2 = TerminessTTFNerdFontMono:size=22;4
+
+; --------------------------------
+; -------- BOTTOM BAR 2 ---------- 
+; --------------------------------
+
+[bar/bottom2]
+monitor = ${env:MONITOR:}
+enable-ipc = true
+bottom = true
+width = 100%
+height = 25
+dpi = 92
+
+modules-left = i3 
+modules-right = filesystem current-keyboard-layout date battery updates-arch-combined dropbox backlight powermenu 
+
+wm-restack = i3
+
+tray-position = none
+;tray-scale = 1.0
+;tray-transparent = true
+;tray-background = ${self.background}
+;tray-maxsize = 64
+;tray-offset-y = 0
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+overline-size = 10
+;overline-color = ${self.background}
+underline-size = 2
+;underline-color = ${self.background}
+
+background = ${colors.bar_transparent}
+foreground = ${colors.bar_fg}
+
+;line-color = ${bar/bottom.background}
+;line-size = 2
+
+spacing = 0
+padding-right = 1
+module-margin-left = 0 
+module-margin-right = 2
+
+font-0 = TerminessTTFNerdFont:style=Bold:size=11;2
+font-1 = TerminessTTFNerdFontMono:size=15;2 
+font-2 = TerminessTTFNerdFontMono:size=18;4
+
+

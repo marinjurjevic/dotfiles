@@ -404,9 +404,11 @@ for_window [class="^.*"] border pixel 1
 # map workspaces on monitors
 workspace $ws1 output eDP1
 workspace $ws2 output eDP1
-workspace $ws3 output DP2-1
-workspace $ws5 output DP2-1
-workspace $ws7 output DP2-1
+
+workspace $ws3 output DP2-1 HDMI1
+workspace $ws5 output DP2-1 HDMI1 
+workspace $ws7 output DP2-1 HDMI1
+
 workspace $ws4 output DP2-2
 workspace $ws6 output DP2-2
 workspace $ws8 output DP2-2
@@ -428,8 +430,8 @@ exec --no-startup-id setxkbmap -model pc104 -layout us,hr -option grp:alt_shift_
 # disable beeps
 exec --no-startup-id "xset b off"
 
-# launch polybar
-exec_always --no-startup-id "sleep 2; $HOME/.config/polybar/launch.sh"
+# launch polybar - already launched by autorandr service
+# exec_always --no-startup-id "sleep 2; $HOME/.config/polybar/launch.sh"
 
 ### Bindings
 
@@ -480,5 +482,3 @@ set $ws5 5
 set $ws6 6
 set $ws7 7
 set $ws8 8
-
-

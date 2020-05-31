@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+CONFIG_FILE=~/.config/polybar/config_home
+# Terminate already running bar instances
+polybar-msg cmd quit
+
+echo "---" | tee -a /tmp/polybar_bottom.log /tmp/polybar_top.log
+echo "---" | tee -a /tmp/polybar_bottom2.log /tmp/polybar_top2.log
+
+
+MONITOR="eDP1" polybar -l info bottom -c $CONFIG_FILE >>/tmp/polybar_bottom.log 2>&1 &
+MONITOR="eDP1" polybar -l info top -c $CONFIG_FILE >>/tmp/polybar_top.log 2>&1 &
+
+MONITOR="HDMI1" polybar -l info bottom2 -c config_home >>/tmp/polybar_bottom2.log 2>&1 &
+MONITOR="HDMI1" polybar -l info top2 -c $CONFIG_FILE >/tmp/polybar_top2.log 2>&1 &
+
+echo "Bars launched..."

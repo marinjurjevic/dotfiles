@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
 
 # Terminate already running bar instances
-killall -q polybar
-
-while pgrep -x polybar >/dev/null; do sleep 1; done
-
-# If all your bars have ipc enabled, you can also use 
-# polybar-msg cmd quit
+polybar-msg cmd quit
 
 echo "---" | tee -a /tmp/polybar_bottom.log /tmp/polybar_top.log
 
