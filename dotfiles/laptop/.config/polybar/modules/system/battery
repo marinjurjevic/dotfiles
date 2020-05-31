@@ -11,7 +11,7 @@ poll-interval = 5
 format-charging = <animation-charging>  <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
 label-full = %percentage%%
-label-full-foreground = ${colors.batt_full}
+label-full-foreground = ${colors.light_green}
 
 ramp-capacity-0 =
 ramp-capacity-0-foreground = ${colors.value_very_high}

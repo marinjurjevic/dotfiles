@@ -3,6 +3,9 @@
 # Terminate already running bar instances
 polybar-msg cmd quit
 
+# wait until all processes have been shut down
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+
 echo "---" | tee -a /tmp/polybar_bottom.log /tmp/polybar_top.log
 
 if type "xrandr"; then
