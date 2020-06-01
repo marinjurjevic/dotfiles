@@ -31,6 +31,9 @@ laptop=common,laptop
 # custom icons
 .local/share/icons/URxvt.png
 
+# screenlayout (arandr)
+.screenlayout
+
 #-----------#
 # .config/* #
 #-----------#
@@ -48,10 +51,12 @@ laptop=common,laptop
 .config/polybar/launch.sh:desktop
 .config/polybar/launch.sh:laptop
 .config/polybar/launch_home.sh:laptop
+.config/polybar/launch_workstation.sh:laptop
 
 .config/polybar/config:desktop
 .config/polybar/config:laptop
 .config/polybar/config_home:laptop
+.config/polybar/config_workstation:laptop
 
 .config/polybar/modules/system:desktop
 .config/polybar/modules/system:laptop

@@ -1,0 +1,240 @@
+; --------------------------------
+; ----------- MODULES ------------ 
+; --------------------------------
+
+# 1) colors
+include-file = ~/.config/polybar/modules/colors
+
+# 2) icon launchers
+include-file = ~/.config/polybar/modules/icon_launchers/google-chrome
+include-file = ~/.config/polybar/modules/icon_launchers/outlook
+include-file = ~/.config/polybar/modules/icon_launchers/youtube
+include-file = ~/.config/polybar/modules/icon_launchers/reddit
+include-file = ~/.config/polybar/modules/icon_launchers/vscode
+
+# 3) misc
+include-file = ~/.config/polybar/modules/misc/title
+include-file = ~/.config/polybar/modules/misc/volume
+include-file = ~/.config/polybar/modules/misc/chrome-current-track
+include-file = ~/.config/polybar/modules/misc/current-keyboard-layout
+include-file = ~/.config/polybar/modules/misc/powermenu
+include-file = ~/.config/polybar/modules/misc/dropbox-status
+include-file = ~/.config/polybar/modules/misc/date
+include-file = ~/.config/polybar/modules/misc/arch-updates
+
+# 4) system
+include-file = ~/.config/polybar/modules/system/filesystem
+include-file = ~/.config/polybar/modules/system/memory
+include-file = ~/.config/polybar/modules/system/cpu
+include-file = ~/.config/polybar/modules/system/ethernet
+include-file = ~/.config/polybar/modules/system/wifi
+include-file = ~/.config/polybar/modules/system/vpn
+include-file = ~/.config/polybar/modules/system/battery
+include-file = ~/.config/polybar/modules/system/backlight
+
+# 5) i3
+include-file = ~/.config/polybar/modules/i3
+
+; --------------------------------
+; ----------- TOP BAR ------------ 
+; --------------------------------
+
+[bar/top]
+monitor = ${env:MONITOR:}
+enable-ipc = true
+bottom = false
+width = 100%
+height = 25
+dpi = 92
+
+modules-left = google-chrome outlook youtube reddit vscode
+modules-center = title
+
+background = ${colors.bar_transparent}
+foreground = ${colors.bar_fg}
+
+;line-color = ${bar/bottom.background}
+;line-size = 2
+
+spacing = 0
+padding-right = 1
+module-margin-left = 1
+underline-size = 2
+
+font-0 = TerminessTTFNerdFont:size=11;2
+font-1 = TerminessTTFNerdFontMono:size=15;2 
+font-2 = TerminessTTFNerdFontMono:size=22;4
+
+; --------------------------------
+; ---------- BOTTOM BAR ---------- 
+; --------------------------------
+
+[bar/bottom]
+monitor = ${env:MONITOR:}
+enable-ipc = true
+bottom = true
+width = 100%
+height = 25
+dpi = 92
+
+modules-left = i3 ethernet wifi vpn
+modules-right = cpu memory 
+
+wm-restack = i3
+
+tray-position = none
+;tray-scale = 1.0
+;tray-transparent = true
+;tray-background = ${self.background}
+;tray-maxsize = 64
+;tray-offset-y = 0
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+overline-size = 10
+;overline-color = ${self.background}
+underline-size = 2
+;underline-color = ${self.background}
+
+background = ${colors.bar_transparent}
+foreground = ${colors.bar_fg}
+
+;line-color = ${bar/bottom.background}
+;line-size = 2
+
+spacing = 0
+padding-right = 1
+module-margin-left = 0 
+module-margin-right = 2
+
+font-0 = TerminessTTFNerdFont:style=Bold:size=11;2
+font-1 = TerminessTTFNerdFontMono:size=15;2 
+font-2 = TerminessTTFNerdFontMono:size=18;4
+
+; --------------------------------
+; ----------- TOP BAR 2 ---------- 
+; --------------------------------
+
+[bar/top2]
+monitor = ${env:MONITOR:}
+enable-ipc = true
+bottom = false
+width = 100%
+height = 25
+dpi = 92
+
+modules-center = title
+modules-right = chrome-current-track pulseaudio
+
+background = ${colors.bar_transparent}
+foreground = ${colors.bar_fg}
+
+;line-color = ${bar/bottom.background}
+;line-size = 2
+
+spacing = 0
+padding-right = 1
+module-margin-left = 1
+underline-size = 2
+
+font-0 = TerminessTTFNerdFont:size=11;2
+font-1 = TerminessTTFNerdFontMono:size=15;2 
+font-2 = TerminessTTFNerdFontMono:size=22;4
+
+; --------------------------------
+; -------- BOTTOM BAR 2 ---------- 
+; --------------------------------
+
+[bar/bottom2]
+monitor = ${env:MONITOR:}
+enable-ipc = true
+bottom = true
+width = 100%
+height = 25
+dpi = 92
+
+modules-left = i3 
+modules-center = date current-keyboard-layout
+modules-right = battery updates-arch-combined dropbox backlight powermenu 
+
+wm-restack = i3
+
+tray-position = none
+;tray-scale = 1.0
+;tray-transparent = true
+;tray-background = ${self.background}
+;tray-maxsize = 64
+;tray-offset-y = 0
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+overline-size = 10
+;overline-color = ${self.background}
+underline-size = 2
+;underline-color = ${self.background}
+
+background = ${colors.bar_transparent}
+foreground = ${colors.bar_fg}
+
+;line-color = ${bar/bottom.background}
+;line-size = 2
+
+spacing = 0
+padding-right = 1
+module-margin-left = 0 
+module-margin-right = 2
+
+font-0 = TerminessTTFNerdFont:style=Bold:size=11;2
+font-1 = TerminessTTFNerdFontMono:size=15;2 
+font-2 = TerminessTTFNerdFontMono:size=18;4
+
+; --------------------------------
+; -------- BOTTOM BAR 3 ---------- 
+; --------------------------------
+
+[bar/bottom3]
+monitor = ${env:MONITOR:}
+enable-ipc = true
+bottom = true
+width = 100%
+height = 25
+dpi = 92
+
+modules-left = i3 
+modules-right = filesystem
+
+wm-restack = i3
+
+tray-position = none
+;tray-scale = 1.0
+;tray-transparent = true
+;tray-background = ${self.background}
+;tray-maxsize = 64
+;tray-offset-y = 0
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+overline-size = 10
+;overline-color = ${self.background}
+underline-size = 2
+;underline-color = ${self.background}
+
+background = ${colors.bar_transparent}
+foreground = ${colors.bar_fg}
+
+;line-color = ${bar/bottom.background}
+;line-size = 2
+
+spacing = 0
+padding-right = 1
+module-margin-left = 0 
+module-margin-right = 2
+
+font-0 = TerminessTTFNerdFont:style=Bold:size=11;2
+font-1 = TerminessTTFNerdFontMono:size=15;2 
+font-2 = TerminessTTFNerdFontMono:size=18;4
+
+
