@@ -9,10 +9,9 @@ configuration {
 }
 
 * {
-  background-color: #21212180;
-  bg-alt: #272727;
+  background-color: #21212150;
   fg: #b3e5fc;
-  light-blue-3: #4fc3f7;
+  light-blue-3: #00b0ff;
   
   border: 0;
   lines: 12;
@@ -45,12 +44,12 @@ element {
 }
 
 element selected {
-  background-color: @bg-alt;
+  background-color: #0000;
   text-color: @light-blue-3;
 }
 
 inputbar {
-  background-color: @background;
+  background-color: #0000;
   children: [prompt, entry];
 }
 

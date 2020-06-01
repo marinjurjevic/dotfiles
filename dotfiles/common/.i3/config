@@ -67,7 +67,7 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+t exec --no-startup-id picom -b
+bindsym $mod+Ctrl+t exec --no-startup-id picom -b --experimental-backends --backend glx 
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -419,7 +419,7 @@ exec --no-startup-id autorandr -c
 ### Autostart
 exec --no-startup-id "sleep 2; nice -n 10 hamsket"
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id "sleep 2; nitrogen --restore; sleep 1; picom -b"
+exec --no-startup-id "sleep 2; nitrogen --restore; sleep 1; picom -b --experimental-backends --backend glx"
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id dropbox-cli start
 exec --no-startup-id xautolock -time 10 -locker blurlock -corners 000-
