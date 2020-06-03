@@ -88,7 +88,61 @@ assign [class="Pcmanfm"] $ws2
 
 ## polybar
 
-TODO
+Polybar is aims to speed up creating custom status bars with simple INI format. 
+It comes with a lot of predefined modules and more can be googled as it's really used among ricers. 
+
+If this is your first encounter with polybar, be sure to check [wiki](https://github.com/polybar/polybar/wiki) on their github page. In TOC you'll find `Configuration`, `Fonts` and `Formatting` pages which explain how to format your modules in-depth. In following lines are some guidelines how to integrate icons, fonts, custom scripts and comments on some issues I faced.
+
+### Configurations
+Configurations are specific to each machine. On laptop there are 3 sets of polybars. All configurations share `misc` and `icon-launchers` modules. All top-level colors are extracted into colors file. All i3-specific configuration are also extracted to file. 
+
+1) **Mobile** - first configuration is when laptop is undocked or connected to yet unknown displays. Autorandr will recognize this and launch [.config/polybar/launch.sh](dotfiles/laptop/.config/polybar/launch.sh) - default launch script. This script has default behavior of mirroring default config to all monitors. Also this configuration is populated with almost all modules. 
+
+2) **Home** - home configuration is launched by [launch_home.sh](dotfiles/laptop/.config/polybar/launch_home.sh). In script hardcoded display interface values are used and different set of top and bottom bars is launched depending on monitor.
+
+3) **Workstation** - this configuration is used when I'm docked in office, launched by [launch_workstation.sh](dotfiles/laptop/.config/polybar/launch_workstation.sh). Just like home launch, it launches 3 sets of polybars on known monitors. Second external monitor does not have a top bar (now there is plently of room with 5 polybars :D - but I'm thinking of custom module for displaying audio visualizer or listing currently running docker containers).
+
+  - All bars are launched with info logs turned on and redirected to `/tmp` folder. Tip for debugging (e.g. module not showing): `cat /tmp/polybar*.log | grep error`.
+  - All bottom bars use i3 module for displaying workspaces assigned to monitor on which polybar is launched. 
+
+#### Icons
+Here is image showing some icons `nerd-fonts` have. 
+
+![nerd-font-icons](docs/images/nerd_fonts_icons.png)
+
+My way of adding icons is just opening module config in vim and in insert mode typing `Ctrl + u` followed by `v` and unicode number. To see all icons, open font in some font viewer (I used a browser tool from Mathew Kurian - [CharacterMap](http://mathew-kurian.github.io/CharacterMap/))
+
+### Modules
+
+I organised modules into three categories: `system`, `misc` and `icon-launchers`. `icon-launchers` are just predefined `custom/text` with implemented clicks.
+`system` modules are configured per machine. For example, there are battery and backlight modules specific to laptop. Network interfaces, filesystem info and sensors also go here as it's hardware specific. In `misc` goes everything else (dropbox status / currently selected keyboard language / date etc...).
+
+#### i3
+Mostly default settings, green underline with lighter background for focused workspace. Red underline for urgent workspace - nice indicator for annoying popups ending up on original workspace (at least sthg) It's possible to use indices, icons or names for representing (not sure yet if it's needed to change i3 for changes to be reflected in bars)
+#### icon-launchers/\* 
+Straightforward - corresponding icons with click-* actions implemented. Cool thing is having click-type actions (e.g. for chrome middle click will launch incognito, for sites right-click will open in new window)
+ 
+#### misc/\*
+  - **date** - Example of using raw formatting tags for icons to match font size. (some icons get unproportional to font used, you'll see different set of fonts per top and bottom bar to balance text and icon size)
+  - **dropbox-status** - Example of using custom script which just checks if process is running and coloring icon in blue if true, grey if not.
+  - **powermenu** - Example of menu for locking / rebooting / shutting down machine
+  - **title** - Showing title of currently focused window
+  - **volume** - `internal/pulseaudio` module for controlling audio volume settings. Mute on click and example of using progress bar.
+
+#### system/\*
+  - **battery** - Example of using ramp for representing charging status and percent charged. Bonus: has animation charging and full-at for defining custom cutoff value (similar to temperature)
+  - **backlight** - Using ramp formatting to get moon effect with different moon icons
+  - **filesystem** - Show filesystem stats, mounted partitions
+  - **ethernet/wifi/vpn** - Examples of network interface status, use `ip a` values for interface fields. Offers rich token support (ip/ipv6, up/down speed, if-name, SSID, RSSI)
+  - **memory** - RAM usage - progress bar - similar to volume but with gradient effect
+  - **cpu** - CPU usage - ramp bars per cores, result is a cool bar graph and color change reflecting core usage
+
+
+### Caveats
+  - title module shows last focused window from all workspaces, it's not yet possible to set it per monitor [source](https://github.com/polybar/polybar/issues/252)
+  - no vertical bars support [source](https://www.reddit.com/r/Polybar/comments/cabobx/how_to_create_vertical_bar_on_rightleft_side_of/)
+  - if vpn interface (usually `tun` or `tun0`) is not visible when polybars are launched, vpn module will be disabled. It won't reappear once vpn interface is up so polybar relaunch will be needed. Also, make sure to use latest polybar (3.4.3) as older versions did not display vpn IP address. ([source](https://github.com/polybar/polybar/issues/1986))
+
 
 ## rxvt-unicode
 [.Xresources](dotfiles/common/.Xresources)
