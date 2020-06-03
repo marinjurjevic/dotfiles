@@ -20,7 +20,8 @@ laptop=common,laptop
 .oh-my-zsh/custom/plugins/zsh-docker-aliases
 
 # i3
-.i3/config
+.i3/config:desktop
+.i3/config:laptop
 
 # urxvt extensions
 .urxvt/ext
