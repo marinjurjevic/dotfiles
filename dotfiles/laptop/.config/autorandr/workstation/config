@@ -26,4 +26,4 @@ crtc 0
 mode 1920x1080
 pos 0x1788
 primary
-rate 60.01
+rate 60.05
