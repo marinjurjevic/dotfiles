@@ -10,7 +10,16 @@
         "command": "-editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
     },
-
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    }
     // Toggle between terminal and editor focus
     { 
         "key": "ctrl+`", 
@@ -22,21 +31,38 @@
         "when": "terminalFocus"
     },
     { 
-        "key": "cmd+shift+j", 
-        "command": "workbench.action.terminal.focusNext" 
+        "key": "ctrl+f", 
+        "command": "workbench.action.terminal.focusFindWidget",
+        "when": "terminalFocus" 
     },
     { 
-        "key": "cmd+shift+k", 
-        "command": "workbench.action.terminal.focusPrevious" 
+        "key": "ctrl+e", 
+        "command": "workbench.action.quickOpen" ,
+        "when": "terminalFocus"
     },
     {
-        "key": "ctrl+n",
-        "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
-        "when": "inFilesPicker && inQuickOpen"
+        "key": "ctrl+1",
+        "command": "workbench.action.terminal.focusAtIndex1",
+        "when": "terminalFocus"
     },
     {
-        "key": "ctrl+shift+p",
-        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
-        "when": "inFilesPicker && inQuickOpen"
+        "key": "ctrl+2",
+        "command": "workbench.action.terminal.focusAtIndex2",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.terminal.focusAtIndex3",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.terminal.focusAtIndex3",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "workbench.action.terminal.focusAtIndex3",
+        "when": "terminalFocus"
     }
 ]

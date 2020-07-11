@@ -64,5 +64,6 @@
     "java.codeGeneration.useBlocks": true,
     "java.home": "/usr/lib/jvm/java-13-openjdk/",
     "java.semanticHighlighting.enabled": true,
-    "idf.baudRate": "460800"
+    "idf.baudRate": "460800",
+    "explorer.autoReveal": false
 }
