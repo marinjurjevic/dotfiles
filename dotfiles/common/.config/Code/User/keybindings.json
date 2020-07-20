@@ -57,12 +57,12 @@
     },
     {
         "key": "ctrl+4",
-        "command": "workbench.action.terminal.focusAtIndex3",
+        "command": "workbench.action.terminal.focusAtIndex4",
         "when": "terminalFocus"
     },
     {
         "key": "ctrl+5",
-        "command": "workbench.action.terminal.focusAtIndex3",
+        "command": "workbench.action.terminal.focusAtIndex5",
         "when": "terminalFocus"
     }
 ]
