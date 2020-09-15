@@ -61,11 +61,6 @@ Xcursor.size:                     0
 URxvt.font:                       xft:TerminessTTFNerdFont:size=12:style=Bold
 URxvt*iconFile:                   /usr/share/icons/Papirus/64x64/apps/terminal.svg
 
-! alternative font settings with 'terminus':
-! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
-! URxvt.bold.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
-!! terminus names see end of file!
-
 URxvt.depth:                      32
 URxvt.background:                 [75]#000000
 ! URxvt.foreground:                	#afffaf
@@ -94,11 +89,9 @@ URxvt.keysym.Control-Up:          \033[1;5A
 URxvt.keysym.Shift-Control-Up:    \033[1;6A
 URxvt.keysym.Control-Down:        \033[1;5B
 URxvt.keysym.Shift-Control-Down:  \033[1;6B
-URxvt.perl-ext-common:            default,url-select
+URxvt.perl-ext-common:            default,matcher
 
 URxvt.keysym.M-u:                 perl:url-select:select_next
-URxvt.url-select.launcher:        /usr/bin/xdg-open
-URxvt.url-select.underline:       true
 
 URxvt.keysym.Shift-Control-Return: perl:fork-here:fork-at-cwd
 
@@ -211,6 +204,7 @@ URxvt.perl-ext:                     fork-here
 ! URxvt*bell-command:               string
 ! URxvt*kuake.hotkey:               string
 ! URxvt*matcher.button:             string
+URxvt*matcher.button:               1
 ! URxvt*matcher.launcher:           string
 ! URxvt*matcher.launcher.*:         string
 ! URxvt*matcher.pattern.*:          string
@@ -227,6 +221,7 @@ URxvt.perl-ext:                     fork-here
 ! URxvt*tabbar-bg:                  colour
 ! URxvt*tabbar-fg:                  colour
 ! URxvt*url-launcher:               string
+URxvt*url-launcher:                 google-chrome
 
 ! The Terminus font uses the following X-names:
 ! -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1

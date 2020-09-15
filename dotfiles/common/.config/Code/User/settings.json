@@ -62,8 +62,11 @@
     "java.codeGeneration.hashCodeEquals.useJava7Objects": true,
     "java.codeGeneration.hashCodeEquals.useInstanceof": true,
     "java.codeGeneration.useBlocks": true,
-    "java.home": "/usr/lib/jvm/java-13-openjdk/",
+    "java.home": "/usr/lib/jvm/java-14-openjdk/",
     "java.semanticHighlighting.enabled": true,
     "idf.baudRate": "460800",
-    "explorer.autoReveal": false
+    "explorer.autoReveal": false,
+    "files.autoSave": "off",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
