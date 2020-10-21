@@ -36,10 +36,11 @@
 		"terminalCursor.foreground": "#f200ff",
     },
 
+    "editor.fontSize": 14.3,
+    "terminal.integrated.fontSize": 15,
     "editor.fontLigatures": true,
     "editor.fontFamily": "TerminessTTF Nerd Font",
     "editor.fontWeight": "bold",
-
     "editor.tabSize": 2,
     "workbench.iconTheme": "ayu",
     "window.zoomLevel": 0,
@@ -68,5 +69,7 @@
     "explorer.autoReveal": false,
     "files.autoSave": "off",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "doxdocgen.generic.authorName": "Marin Jurjević",
+    "doxdocgen.generic.authorEmail": "jurjevic@byte-lab.com"
+
 }

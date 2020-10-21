@@ -39,7 +39,6 @@ element {
   background-color: #0000;
   border-radius: 14;
   padding: 12;
-  orientation: vertical;
   text-color: @fg;
 }
 
@@ -63,4 +62,8 @@ prompt {
 entry {
   padding: 12;
   text-color: @light-blue-3;
+}
+
+element-icon {
+    size:             1.0em ;
 }
