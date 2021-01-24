@@ -2,7 +2,7 @@
 
 ; volume bar colors
 volume_bar = ${colors.light_green}
-volume_muted = $ff5555
+volume_muted = #ff5555
 
 [module/pulseaudio]
 type = internal/pulseaudio

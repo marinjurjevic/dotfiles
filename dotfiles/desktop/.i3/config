@@ -402,16 +402,15 @@ mode "$mode_gaps_outer" {
 for_window [class="^.*"] border pixel 1
 
 # map workspaces on monitors
-workspace $ws1 output eDP1
-workspace $ws2 output eDP1
+workspace $ws1 output DP-4
+workspace $ws3 output DP-4
+workspace $ws5 output DP-4
+workspace $ws7 output DP-4
 
-workspace $ws3 output DP2-1 HDMI1
-workspace $ws5 output DP2-1 HDMI1 
-workspace $ws7 output DP2-1 HDMI1
-
-workspace $ws4 output DP2-2
-workspace $ws6 output DP2-2
-workspace $ws8 output DP2-2
+workspace $ws2 output DP-0
+workspace $ws4 output DP-0
+workspace $ws6 output DP-0
+workspace $ws8 output DP-0
 
 # restore monitor workspaces
 exec --no-startup-id autorandr -c
@@ -422,6 +421,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id "sleep 2; nitrogen --restore; sleep 1; picom -b --experimental-backends --backend glx --xrender-sync-fence"
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id dropbox-cli start
+exec --no-startup-id keyledsd
 exec --no-startup-id xautolock -time 10 -locker blurlock -corners 000-
 
 # Configure keyboard layouts - Alt + Shift Toggle

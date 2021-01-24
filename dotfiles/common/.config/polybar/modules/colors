@@ -19,7 +19,8 @@ orange = #ff5733
 ; inactive
 inactive = #444444
 
-bar_transparent = #00 
+bar_transparent = #a0000000
+bar_transparent_dark = #e0000000
 bar_fg= #eee
 
 ; performance bar/ramp colors
