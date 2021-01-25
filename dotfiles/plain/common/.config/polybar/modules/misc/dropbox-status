@@ -1,0 +1,11 @@
+[module/dropbox]
+type = custom/script
+exec = ~/.config/polybar/scripts/dropbox_status.sh
+interval = 5
+click-left = pcmanfm ~/Dropbox &
+;tail = true
+
+; output by script...
+;format = <label>
+;format-foreground = #007ee5
+;label = 

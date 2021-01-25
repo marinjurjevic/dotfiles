@@ -1,0 +1,34 @@
+# custom defined colors by name
+
+[colors]
+
+; PREDEFINED COLORS
+
+; light green
+light_green = #afffaf
+
+; light_blue
+light_blue = #12c8ff
+
+; army green
+army_green = #4b5320
+
+; orange
+orange = #ff5733
+
+; inactive
+inactive = #444444
+
+bar_transparent = #a0000000
+bar_transparent_dark = #e0000000
+bar_fg= #eee
+
+; performance bar/ramp colors
+value_very_low = #aaff77
+value_low = #e2ff00
+value_medium = #fbd022
+value_high = #ff8900
+value_very_high = #ff5555
+
+; empty bar
+empty_bar = #444444

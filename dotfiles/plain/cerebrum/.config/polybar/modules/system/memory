@@ -1,0 +1,20 @@
+[module/memory]
+type = internal/memory
+format = <label> <bar-used>
+label = RAM (%percentage_used%%)
+
+bar-used-width = 20
+bar-used-foreground-0 = ${colors.value_very_low}
+bar-used-foreground-1 = ${colors.value_low}
+bar-used-foreground-2 = ${colors.value_medium}
+bar-used-foreground-3 = ${colors.value_high}
+bar-used-foreground-4 = ${colors.value_very_high}
+
+bar-used-indicator = ▆
+bar-used-indicator-font = 2
+bar-used-indicator-foreground = ${colors.empty_bar}
+bar-used-fill = ▆
+bar-used-fill-font = 2
+bar-used-empty = ▆
+bar-used-empty-font = 2
+bar-used-empty-foreground = ${colors.empty_bar}

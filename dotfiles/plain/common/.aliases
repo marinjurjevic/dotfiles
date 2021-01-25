@@ -1,0 +1,12 @@
+# custom aliases
+
+alias gs='git status'
+alias lc='ls -ld $HOME/.?*'
+alias lcs="ls -ld $HOME/.?* | tr -s ' ' | cut -d ' ' -f9"
+
+alias rmr='rm -r'
+alias cpr='cp -r'
+
+
+# ByteLab win server
+alias rdwin="echo -n 'Password: '; read -s winPswd ; xfreerdp /u:mjurjevic /v:win.byte-lab.com:3389 /cert-ignore /audio /mic /dynamic-resolution +home-drive +gfx-h264 /gdi:hw /p:\$(echo \$winPswd) & disown ; winPswd=''"

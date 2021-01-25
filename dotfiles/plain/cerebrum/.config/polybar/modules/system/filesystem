@@ -1,0 +1,9 @@
+[module/filesystem]
+type = internal/fs
+
+mount-0 = /
+mount-1 = /mnt/Storage
+
+label-mounted = %{T3} %{T-}%mountpoint%: %used%/%total% (%percentage_used%%)
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.inactive}
