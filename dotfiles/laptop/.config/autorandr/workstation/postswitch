@@ -1,3 +1,0 @@
-#!/bin/bash -x
-
-/bin/bash $HOME/.config/polybar/launch_workstation.sh

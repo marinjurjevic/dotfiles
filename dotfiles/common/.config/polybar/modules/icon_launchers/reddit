@@ -1,9 +1,0 @@
-[module/reddit]
-type = custom/text
-content = 
-content-font-0 = 3
-content-foreground = #ff4500
-content-padding = 0
-
-click-left = google-chrome reddit.com &
-click-right = google-chrome reddit.com --new-window &

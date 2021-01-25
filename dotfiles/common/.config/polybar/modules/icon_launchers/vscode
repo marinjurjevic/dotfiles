@@ -1,9 +1,0 @@
-[module/vscode]
-type = custom/text
-content = 
-content-font-0 = 3
-content-foreground = #0076bf
-content-padding = 1
-
-click-left = code &
-
