@@ -2,9 +2,10 @@
 #### DOT FILES ####
 ###################
 
-# group machine specific categorieess
-desktop=common,desktop
-pc046=common,pc046
+# group machine specific categories
+# 	 This is done implicitly if categories are named by hostname
+# cerebrum=common,cerebrum
+# pc046=common,pc046
 
 #-----------#
 #     ~/    #
@@ -18,7 +19,7 @@ pc046=common,pc046
 .oh-my-zsh/custom/themes/gnzh.zsh-theme
 
 # i3-wm
-.i3/config:desktop
+.i3/config:cerebrum
 
 # .i3/config:pc046
 
@@ -40,11 +41,11 @@ pc046=common,pc046
 # .config/* #
 #-----------#
 
-# autorandr - desktop
-.config/autorandr/postswitch:desktop
-.config/autorandr/default/config:desktop
-.config/autorandr/default/postswitch:desktop
-.config/autorandr/default/setup:desktop
+# autorandr - cerebrum
+.config/autorandr/postswitch:cerebrum
+.config/autorandr/default/config:cerebrum
+.config/autorandr/default/postswitch:cerebrum
+.config/autorandr/default/setup:cerebrum
 
 # autorandr - pc046
 # !!!todo pc046 here
@@ -57,16 +58,16 @@ pc046=common,pc046
 .config/rofi/material.rasi
 .config/rofi/my_theme.rasi
 
-# polybar - desktop
-.config/polybar/launch.sh:desktop
-.config/polybar/config:desktop
-.config/polybar/modules/system/cpu:desktop
-.config/polybar/modules/system/ethernet:desktop
-.config/polybar/modules/system/filesystem:desktop
-.config/polybar/modules/system/memory:desktop
-.config/polybar/modules/system/temperature:desktop
-.config/polybar/modules/system/vpn:desktop
-.config/polybar/modules/system/wifi:desktop
+# polybar - cerebrum
+.config/polybar/launch.sh:cerebrum
+.config/polybar/config:cerebrum
+.config/polybar/modules/system/cpu:cerebrum
+.config/polybar/modules/system/ethernet:cerebrum
+.config/polybar/modules/system/filesystem:cerebrum
+.config/polybar/modules/system/memory:cerebrum
+.config/polybar/modules/system/temperature:cerebrum
+.config/polybar/modules/system/vpn:cerebrum
+.config/polybar/modules/system/wifi:cerebrum
 
 
 # polybar - pc046
@@ -141,9 +142,9 @@ pc046=common,pc046
 
 # ssh
 
-.ssh/id_rsa:desktop|encrypt
-.ssh/config:desktop|encrypt
-.ssh/id_rsa.pub:desktop|encrypt
+.ssh/id_rsa:cerebrum|encrypt
+.ssh/config:cerebrum|encrypt
+.ssh/id_rsa.pub:cerebrum|encrypt
 
 #.ssh/id_rsa:pc046|encrypt
 #.ssh/config:pc046|encrypt
