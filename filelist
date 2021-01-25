@@ -50,6 +50,7 @@
 
 # autorandr - pc046
 .config/autorandr/default/config:pc046
+.config/autorandr/default/postswitch:pc046
 .config/autorandr/default/setup:pc046
 
 .config/autorandr/home/config:pc046
