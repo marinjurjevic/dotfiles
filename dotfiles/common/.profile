@@ -1,4 +1,4 @@
-export QT_QPA_PLATFORMTHEME="gtk2"
+export QT_STYLE_OVERRIDE=adwaita
 export EDITOR=/usr/bin/subl
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 # fix "xdg-open fork-bomb" export your preferred browser from here
