@@ -108,7 +108,7 @@
 
 .config/polybar/scripts/chrome_current_track.sh
 .config/polybar/scripts/dropbox_status.sh
-.config/polybar/scripts/update_arch_combined.sh
+.config/polybar/scripts/updates_arch_combined.sh
 
 # cava - audio visualizer
 .config/cava/config
