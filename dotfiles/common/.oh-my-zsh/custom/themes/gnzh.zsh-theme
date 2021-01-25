@@ -54,8 +54,8 @@ eval ssh_ret_code_icon='$FG[001]'
 # Check if we are on SSH or not
 if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then
   PR_PROMPT='%F${ssh_prompt_icon}▶%f'
-  PR_PROMPT_1='%F${ssh_prompt_line}╭─%f'
-  PR_PROMPT_2='%F${ssh_prompt_line}╰─%f'
+  PR_PROMPT_1='%F${ssh_prompt_line}┌─%f'
+  PR_PROMPT_2='%F${ssh_prompt_line}└─%f'
 
   PR_USER='%F${ssh_username}%n%f'
   PR_USER_ICON='%F${ssh_username_icon} %f'
@@ -70,8 +70,8 @@ if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then
   PR_RET_CODE_ICON="%F${ssh_ret_code_icon}↵%f"
 else
   PR_PROMPT='%F${prompt_icon}▶%f'
-  PR_PROMPT_1='%F${prompt_line}╭─%f'
-  PR_PROMPT_2='%F${prompt_line}╰─%f'
+  PR_PROMPT_1='%F${prompt_line}┌─%f'
+  PR_PROMPT_2='%F${prompt_line}└─%f'
 
   PR_USER='%F${username}%n%f'
   PR_USER_ICON='%F${username_icon} %f'

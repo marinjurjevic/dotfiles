@@ -33,7 +33,9 @@
 		"terminal.background": "#151516",
 		"terminal.foreground": "#9fa6af",
 		"terminalCursor.background": "#f200ff",
-		"terminalCursor.foreground": "#f200ff",
+        "terminalCursor.foreground": "#f200ff",
+
+        "editorRuler.foreground": "#1a5f2b"
     },
 
     "editor.fontSize": 14.3,
@@ -41,7 +43,8 @@
     "editor.fontLigatures": true,
     "editor.fontFamily": "TerminessTTF Nerd Font",
     "editor.fontWeight": "bold",
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
+    "editor.rulers": [80,120],
     "workbench.iconTheme": "ayu",
     "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
@@ -52,24 +55,26 @@
     "cortex-debug.openocdPath": "/usr/bin/openocd",
     "explorer.confirmDragAndDrop": false,
     "idf.showOnboardingOnInit": false,
-    "idf.pythonSystemBinPath": "/usr/bin/python",
     "idf.espIdfPath": "/home/marin/vendor/Espressif/esp32/esp-idf",
     "idf.toolsPath": "/home/marin/vendor/Espressif/tools",
-    "idf.pythonBinPath": "/home/marin/vendor/Espressif/tools/python_env/idf4.0_py3.8_env/bin/python",
-    "idf.customExtraPaths": "/home/marin/vendor/Espressif/tools/python_env/idf4.0_py3.8_env/bin:/usr/bin:/home/marin/vendor/Espressif/tools/tools/xtensa-esp32-elf/esp-2019r2-8.2.0/xtensa-esp32-elf/bin:/home/marin/vendor/Espressif/tools/tools/esp32ulp-elf/2.28.51.20170517/esp32ulp-elf-binutils/bin:/home/marin/vendor/Espressif/tools/tools/openocd-esp32/v0.10.0-esp32-20190313/openocd-esp32/bin",
+    "idf.pythonBinPath": "/usr/bin/python",
+    "idf.customExtraPaths": "/usr/bin:/home/marin/vendor/Espressif/tools/tools/xtensa-esp32-elf/esp-2019r2-8.2.0/xtensa-esp32-elf/bin:/home/marin/vendor/Espressif/tools/tools/esp32ulp-elf/2.28.51.20170517/esp32ulp-elf-binutils/bin:/home/marin/vendor/Espressif/tools/tools/openocd-esp32/v0.10.0-esp32-20190313/openocd-esp32/bin",
     "idf.customExtraVars": "{\"OPENOCD_SCRIPTS\":\"/home/marin/vendor/Espressif/tools/tools/openocd-esp32/v0.10.0-esp32-20190313/openocd-esp32/share/openocd/scripts\"}",
     "idf.port": "/dev/ttyUSB0",
     "java.codeGeneration.generateComments": true,
     "java.codeGeneration.hashCodeEquals.useJava7Objects": true,
     "java.codeGeneration.hashCodeEquals.useInstanceof": true,
     "java.codeGeneration.useBlocks": true,
-    "java.home": "/usr/lib/jvm/java-14-openjdk/",
+    "java.home": "/usr/lib/jvm/java-15-openjdk/",
     "java.semanticHighlighting.enabled": true,
     "idf.baudRate": "460800",
     "explorer.autoReveal": false,
     "files.autoSave": "off",
     "editor.suggestSelection": "first",
     "doxdocgen.generic.authorName": "Marin Jurjević",
-    "doxdocgen.generic.authorEmail": "jurjevic@byte-lab.com"
+    "doxdocgen.generic.authorEmail": "jurjevic@byte-lab.com",
+    "C_Cpp.default.cppStandard": "c++17",
+    "cmake.configureOnOpen": true,
+    "cmake.generator": "Unix Makefiles"
 
 }
