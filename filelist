@@ -2,74 +2,112 @@
 #### DOT FILES ####
 ###################
 
+# group machine specific categorieess
 desktop=common,desktop
-laptop=common,laptop
+pc046=common,pc046
 
-# profile
+#-----------#
+#     ~/    #
+#-----------#
+
+# shelll independent aliases
+.aliases
+
+# zsh
+.zshrc
+.oh-my-zsh/custom/themes/gnzh.zsh-theme
+
+# i3-wm
+.i3/config:desktop
+
+# .i3/config:pc046
+
+
+# urxvt
+.urxvt/ext/fork-here
+.local/share/icons/URxvt.png
+
+# login settings
 .profile
 
 # vim
 .vimrc
 
-# zsh
-.zshrc
-.aliases
-
-# custom oh-my-zsh stuff
-.oh-my-zsh/custom/themes/gnzh.zsh-theme
-.oh-my-zsh/custom/plugins/zsh-docker-aliases
-
-# i3
-.i3/config:desktop
-.i3/config:laptop
-
-# urxvt extensions
-.urxvt/ext
-
-# Xresources
+# X server
 .Xresources
-
-# custom icons
-.local/share/icons/URxvt.png
-
-# screenlayout (arandr)
-.screenlayout
 
 #-----------#
 # .config/* #
 #-----------#
 
-# autorandr
-.config/autorandr:laptop
-.config/autorandr:desktop
+# autorandr - desktop
+.config/autorandr/postswitch:desktop
+.config/autorandr/default/config:desktop
+.config/autorandr/default/postswitch:desktop
+.config/autorandr/default/setup:desktop
+
+# autorandr - pc046
+# !!!todo pc046 here
 
 # picom 
 .config/picom/picom.conf
 
 # rofi
-.config/rofi
+.config/rofi/config.rasi
+.config/rofi/material.rasi
+.config/rofi/my_theme.rasi
 
-# polybar - machine specific
+# polybar - desktop
 .config/polybar/launch.sh:desktop
-.config/polybar/launch.sh:laptop
-.config/polybar/launch_home.sh:laptop
-.config/polybar/launch_workstation.sh:laptop
-
 .config/polybar/config:desktop
-.config/polybar/config:laptop
-.config/polybar/config_home:laptop
-.config/polybar/config_workstation:laptop
+.config/polybar/modules/system/cpu:desktop
+.config/polybar/modules/system/ethernet:desktop
+.config/polybar/modules/system/filesystem:desktop
+.config/polybar/modules/system/memory:desktop
+.config/polybar/modules/system/temperature:desktop
+.config/polybar/modules/system/vpn:desktop
+.config/polybar/modules/system/wifi:desktop
 
-.config/polybar/modules/system:desktop
-.config/polybar/modules/system:laptop
+
+# polybar - pc046
+#.config/polybar/launch.sh:pc046
+#.config/polybar/launch_home.sh:pc046
+#.config/polybar/launch_workstation.sh:pc046
+
+#.config/polybar/config:pc046
+#.config/polybar/config_home:pc046
+#.config/polybar/config_workstation:pc046
+
+#.config/polybar/modules/system/cpu:pc046
+#.config/polybar/modules/system/ethernet:pc046
+#.config/polybar/modules/system/filesystem:pc046
+#.config/polybar/modules/system/memory:pc046
+#.config/polybar/modules/system/temperature:pc046
+#.config/polybar/modules/system/vpn:pc046
+#.config/polybar/modules/system/wifi:pc046
+
 
 # polybar - common
 .config/polybar/modules/colors
 .config/polybar/modules/i3
-.config/polybar/modules/misc
-.config/polybar/modules/icon_launchers
+.config/polybar/modules/misc/arch-updates
+.config/polybar/modules/misc/chrome-current-track
+.config/polybar/modules/misc/current-keyboard-layout
+.config/polybar/modules/misc/date
+.config/polybar/modules/misc/dropbox-status
+.config/polybar/modules/misc/powermenu
+.config/polybar/modules/misc/title
+.config/polybar/modules/misc/volume
 
-.config/polybar/scripts
+.config/polybar/modules/icon_launchers/google-chrome
+.config/polybar/modules/icon_launchers/outlook
+.config/polybar/modules/icon_launchers/reddit
+.config/polybar/modules/icon_launchers/vscode
+.config/polybar/modules/icon_launchers/youtube
+
+.config/polybar/scripts/chrome_current_track.sh
+.config/polybar/scripts/dropbox_status.sh
+.config/polybar/scripts/update_arch_combined.sh
 
 # cava - audio visualizer
 .config/cava/config
@@ -83,3 +121,31 @@ laptop=common,laptop
 
 # Qt4 theme
 .config/Trolltech.conf
+
+
+#-----------------#
+# Encrypted Files #
+#-----------------#
+
+# vpn
+.config/bytelab/openvpn/bytelab.conf|encrypt
+
+# nas credentials
+.config/bytelab/nas/nasbl.conf|encrypt
+
+# certificates
+.cert/nm-openvpn/bytelab-ca.pem|encrypt
+.cert/nm-openvpn/bytelab-cert.pem|encrypt
+.cert/nm-openvpn/bytelab-tls-auth.pem|encrypt
+.cert/nm-openvpn/bytelab-key.pem|encrypt
+
+# ssh
+
+.ssh/id_rsa:desktop|encrypt
+.ssh/config:desktop|encrypt
+.ssh/id_rsa.pub:desktop|encrypt
+
+#.ssh/id_rsa:pc046|encrypt
+#.ssh/config:pc046|encrypt
+#.ssh/id_rsa.pub:pc046|encrypt
+
