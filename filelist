@@ -40,15 +40,17 @@
 # .config/* #
 #-----------#
 
-# autorandr - cerebrum
-.config/autorandr/postswitch:cerebrum
+# autorandr common
+.config/autorandr/postswitch.d/restore_background
 
+# autorandr - cerebrum
 .config/autorandr/default/config:cerebrum
 .config/autorandr/default/postswitch:cerebrum
 .config/autorandr/default/setup:cerebrum
 
 # autorandr - pc046
-.config/autorandr/postswitch:pc046
+.config/autorandr/default/config:pc046
+.config/autorandr/default/setup:pc046
 
 .config/autorandr/home/config:pc046
 .config/autorandr/home/postswitch:pc046
