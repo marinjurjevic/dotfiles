@@ -20,8 +20,7 @@
 
 # i3-wm
 .i3/config:cerebrum
-
-# .i3/config:pc046
+.i3/config:pc046
 
 
 # urxvt
@@ -43,12 +42,26 @@
 
 # autorandr - cerebrum
 .config/autorandr/postswitch:cerebrum
+
 .config/autorandr/default/config:cerebrum
 .config/autorandr/default/postswitch:cerebrum
 .config/autorandr/default/setup:cerebrum
 
 # autorandr - pc046
-# !!!todo pc046 here
+.config/autorandr/postswitch:pc046
+
+.config/autorandr/home/config:pc046
+.config/autorandr/home/postswitch:pc046
+.config/autorandr/home/setup:pc046
+
+.config/autorandr/mobile/config:pc046
+.config/autorandr/mobile/postswitch:pc046
+.config/autorandr/mobile/setup:pc046
+
+.config/autorandr/workstation/config:pc046
+.config/autorandr/workstation/postswitch:pc046
+.config/autorandr/workstation/setup:pc046
+
 
 # picom 
 .config/picom/picom.conf
@@ -71,21 +84,21 @@
 
 
 # polybar - pc046
-#.config/polybar/launch.sh:pc046
-#.config/polybar/launch_home.sh:pc046
-#.config/polybar/launch_workstation.sh:pc046
+.config/polybar/launch.sh:pc046
+.config/polybar/launch_home.sh:pc046
+.config/polybar/launch_workstation.sh:pc046
 
-#.config/polybar/config:pc046
-#.config/polybar/config_home:pc046
-#.config/polybar/config_workstation:pc046
+.config/polybar/config:pc046
+.config/polybar/config_home:pc046
+.config/polybar/config_workstation:pc046
 
-#.config/polybar/modules/system/cpu:pc046
-#.config/polybar/modules/system/ethernet:pc046
-#.config/polybar/modules/system/filesystem:pc046
-#.config/polybar/modules/system/memory:pc046
-#.config/polybar/modules/system/temperature:pc046
-#.config/polybar/modules/system/vpn:pc046
-#.config/polybar/modules/system/wifi:pc046
+.config/polybar/modules/system/cpu:pc046
+.config/polybar/modules/system/ethernet:pc046
+.config/polybar/modules/system/filesystem:pc046
+.config/polybar/modules/system/memory:pc046
+.config/polybar/modules/system/temperature:pc046
+.config/polybar/modules/system/vpn:pc046
+.config/polybar/modules/system/wifi:pc046
 
 
 # polybar - common
@@ -146,7 +159,7 @@
 .ssh/config:cerebrum|encrypt
 .ssh/id_rsa.pub:cerebrum|encrypt
 
-#.ssh/id_rsa:pc046|encrypt
-#.ssh/config:pc046|encrypt
-#.ssh/id_rsa.pub:pc046|encrypt
+.ssh/id_rsa:pc046|encrypt
+.ssh/config:pc046|encrypt
+.ssh/id_rsa.pub:pc046|encrypt
 

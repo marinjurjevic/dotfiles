@@ -1,0 +1,26 @@
+[module/temperature]
+type = internal/temperature
+thermal-zone = 2
+
+format = <ramp> <label>
+;format-underline = #f50a4d
+format-warn = <ramp> <label-warn>
+;format-warn-underline = ${self.format-underline}
+
+label = %temperature-c%
+label-warn = HOT! %temperature-c%
+label-warn-foreground = #f00
+
+base-temperature = 30
+warn-temperature = 80
+
+ramp-0 = 
+ramp-0-foreground = ${colors.value_very_low}
+ramp-1 = 
+ramp-1-foreground = ${colors.value_low}
+ramp-2 = 
+ramp-2-foreground = ${colors.value_medium}
+ramp-3 = 
+ramp-3-foreground = ${colors.value_high}
+ramp-4 = 
+ramp-4-foreground = ${colors.value_very_high}
