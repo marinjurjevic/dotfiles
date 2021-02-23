@@ -421,8 +421,13 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id "sleep 2; nitrogen --restore; sleep 1; picom -b --experimental-backends --backend glx --xrender-sync-fence"
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id dropbox-cli start
+
+# Start Logitech daemon for LED control
 exec --no-startup-id keyledsd
 exec --no-startup-id xautolock -time 10 -locker blurlock -corners 000-
+
+# Load custom ASUS Nvidia icm profile
+exec --no-startup-id xiccd
 
 # Configure keyboard layouts - Alt + Shift Toggle
 exec --no-startup-id setxkbmap -model pc104 -layout us,hr -option grp:alt_shift_toggle

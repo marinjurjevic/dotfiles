@@ -75,6 +75,12 @@
     "doxdocgen.generic.authorEmail": "jurjevic@byte-lab.com",
     "C_Cpp.default.cppStandard": "c++17",
     "cmake.configureOnOpen": true,
-    "cmake.generator": "Unix Makefiles"
+    "cmake.generator": "Unix Makefiles",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
 
 }
