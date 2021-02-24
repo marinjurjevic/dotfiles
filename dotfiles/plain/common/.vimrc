@@ -1,4 +1,6 @@
-" Defaults
+" --------------------------
+" GENERAL
+" --------------------------
 set nocompatible
 set number
 set autoindent
@@ -7,9 +9,14 @@ set shiftround
 set shiftwidth=4
 set smarttab
 set tabstop=4
+set signcolumn=yes
 set laststatus=2
 
+inoremap jk <Esc>
 
+" --------------------------
+" PLUGINS
+" --------------------------
 " vim-plug automatic installation
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -27,7 +34,6 @@ Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer' }
 
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
-Plug 'cdelledonne/vim-cmake'
 
 call plug#end()
 
@@ -37,8 +43,17 @@ colorscheme onedark
 
 " YouCompleteMe
 let g:ycm_add_preview_to_completeopt="popup"
+
 let g:ycm_extra_conf_globlist = ['~/code/*']
 let g:ycm_always_populate_location_list = 1
+
+let g:ycm_error_symbol = 'x'
+let g:ycm_warning_symbol = '!'
+
+nnoremap <leader>go :YcmCompleter GoTo<CR>
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Airline
 let g:airline_section_c = ''
@@ -54,4 +69,3 @@ let g:airline_symbols.readonly = '令'
 let g:airline_symbols.linenr = ''
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.whitespace = ' '
-
