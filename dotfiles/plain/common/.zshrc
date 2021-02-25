@@ -73,6 +73,7 @@ plugins=(
   autojump
   docker
   git
+  taskwarrior
   zsh-autosuggestions
   zsh-completions
   zsh-docker-aliases
