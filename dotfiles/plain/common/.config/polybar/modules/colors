@@ -6,6 +6,7 @@
 
 ; light green
 light_green = #afffaf
+; light_green = #7cc67c
 
 ; light_blue
 light_blue = #12c8ff
@@ -19,12 +20,13 @@ orange = #ff5733
 ; inactive
 inactive = #444444
 
+bar_default = #1c1e21
 bar_transparent = #50000000
 bar_transparent_dark = #e0000000
 bar_fg= #eee
 
 ; performance bar/ramp colors
-value_very_low = #aaff77
+value_very_low = ${colors.light_green}
 value_low = #e2ff00
 value_medium = #fbd022
 value_high = #ff8900
@@ -32,3 +34,10 @@ value_very_high = #ff5555
 
 ; empty bar
 empty_bar = #444444
+
+# i3
+i3_visible_uline= ${colors.light_green} 
+i3_visible_bg = #7cc67c
+i3_urgent_bg = #00
+i3_urgent_uline = #bd2c40
+

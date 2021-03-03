@@ -1,9 +1,3 @@
-[colors]
-i3_uline = ${colors.light_green}
-i3_visible_bg = #555555
-i3_urgent_bg = #00
-i3_urgent_uline = #bd2c40
-
 [module/i3]
 type = internal/i3
 
@@ -37,7 +31,7 @@ format = <label-state> <label-mode>
 ; Default: %mode%
 label-mode = %mode%
 label-mode-padding = 0
-label-mode-foreground = ${colors.i3_uline}
+label-mode-foreground = ${colors.i3_visible_uline}
 ;label-mode-background = #e60053
 
 ; Available tokens:
@@ -49,7 +43,7 @@ label-mode-foreground = ${colors.i3_uline}
 label-focused =  %index%
 label-focused-foreground = #ffffff
 label-focused-background = #3f3f3f
-label-focused-underline = ${colors.i3_uline}
+label-focused-underline = ${colors.i3_visible_uline}
 label-focused-padding = 2
 
 ; Available tokens:
