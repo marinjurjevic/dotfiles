@@ -14,42 +14,50 @@ XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 
-*background:                      #060038
-*foreground:                      #d8d8d8
+! *background:                      #060038
+! *foreground:                      #d8d8d8
 *fading:                          8
 *fadeColor:                       black
 *cursorColor:                     #f200ff
 *pointerColorBackground:          #2B2C2B
 *pointerColorForeground:          #16A085
 
+! special
+*.foreground:   #ABB2BF
+*.background:   #282C34
+*.cursorColor:  #ABB2BF
 
-!! black dark/light
-*color0:                          #222D31
-*color8:                          #585858
+! black
+*.color0:       #5C6370
+*.color8:       #4B5263
 
-!! red dark/light
-*color1:                          #ab4642
-*color9:                          #ab4642
+! red
+*.color1:       #E06C75
+*.color9:       #BE5046
 
-!! green dark/light
-*color2:                          #04ff00
-*color10:                         #04ff00
+! green
+*.color2:       #87D787
+*.color10:      #87D787
 
-!! yellow dark/light
-*color3:                          #f7ca88
-*color11:                         #f7ca88
+! yellow
+*.color3:       #E5C07B
+*.color11:      #D19A66
 
-!! blue dark/light
-*color4:                          #7cafc2
-*color12:                         #7cafc2
+! blue
+*.color4:       #61AFEF
+*.color12:      #61AFEF
 
-!! magenta dark/light
-*color5:                          #ba8baf
-*color13:                         #ba8baf
+! magenta
+*.color5:       #FF00FF
+*.color13:      #FF00FF
 
-!! cyan dark/light
-*color6:                          #1ABB9B
-*color14:                         #1ABB9B
+! cyan
+*.color6:       #56B6C2
+*.color14:      #56B6C2
+
+! white
+*.color7:       #ABB2BF
+*.color15:      #3E4452
 
 !! white dark/light
 *color7:                          #d8d8d8
@@ -62,7 +70,7 @@ URxvt.font:                       xft:TerminessTTFNerdFont:size=12:style=Bold
 URxvt*iconFile:                   /usr/share/icons/Papirus/64x64/apps/terminal.svg
 
 URxvt.depth:                      32
-URxvt.background:                 [75]#000000
+! URxvt.background:                 #000000
 ! URxvt.foreground:                	#afffaf
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
@@ -153,7 +161,7 @@ URxvt*cursorUnderline:              true
 ! URxvt*troughColor:                color
 ! URxvt*highlightColor:             color
 ! URxvt*highlightTextColor:         color
-URxvt*cursorColor:                  #f200ff
+URxvt*cursorColor:                  #ff00ff
 ! URxvt*cursorColor2:               color
 ! URxvt*pointerColor:               color
 ! URxvt*pointerColor2:              color

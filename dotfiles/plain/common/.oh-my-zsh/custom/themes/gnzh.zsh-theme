@@ -14,11 +14,11 @@ local PR_RET_CODE PR_RET_CODE_ICON
 # don't forget $ before curly braces for custom colors!
 
 # LOCAL
-eval prompt_icon='$FG[121]'
-eval prompt_line='$FG[121]'
+eval prompt_icon='$FG[114]'
+eval prompt_line='$FG[114]'
 
-eval username='$FG[121]'
-eval username_icon='$FG[121]'
+eval username='$FG[114]'
+eval username_icon='$FG[114]'
 
 eval git_branch='$FG[208]'
 eval git_branch_icon='$FG[208]'
@@ -88,7 +88,8 @@ fi
 
 local return_code="%(?..$PR_RET_CODE $PR_RET_CODE_ICON)"
 local user="$PR_USER_ICON$PR_USER"
-local host="$PR_HOST_ICON$PR_HOST"
+# local host="$PR_HOST_ICON$PR_HOST"
+local host=""
 local current_dir="$PR_CUR_DIR_ICON$PR_CUR_DIR"
 local git_branch='$(git_prompt_info)'
 

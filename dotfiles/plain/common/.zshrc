@@ -90,6 +90,10 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 source $HOME/.aliases
 
+less_termcap[mb]="${fg_bold[red]}"
+less_termcap[md]="${fg_bold[red]}"
+less_termcap[so]="${fg_bold[white]}${bg_bold[red]}"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
