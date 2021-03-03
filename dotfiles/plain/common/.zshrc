@@ -71,12 +71,16 @@ ZSH_THEME="gnzh"
 plugins=(
   archlinux
   autojump
+  colored-man-pages
   docker
+  forgit
+  fzf
   git
   taskwarrior
   zsh-autosuggestions
   zsh-completions
   zsh-docker-aliases
+  zsh-syntax-highlighting
 )
 
 autoload -U compinit && compinit
