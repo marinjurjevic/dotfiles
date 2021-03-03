@@ -97,12 +97,14 @@ URxvt.keysym.Control-Up:          \033[1;5A
 URxvt.keysym.Shift-Control-Up:    \033[1;6A
 URxvt.keysym.Control-Down:        \033[1;5B
 URxvt.keysym.Shift-Control-Down:  \033[1;6B
-URxvt.keysym.Shift-space:         \033[5~
 URxvt.perl-ext-common:            default,matcher
 
 URxvt.keysym.M-u:                 perl:url-select:select_next
 
 URxvt.keysym.Shift-Control-Return: perl:fork-here:fork-at-cwd
+
+! Problem is holding Shift space while typing - not practical
+! URxvt.keysym.Shift-space:         \033[5~
 
 ! URxvt.keysym.M-C-c:               perl:clipboard:copy
 ! URxvt.keysym.M-v:                 perl:clipboard:paste
