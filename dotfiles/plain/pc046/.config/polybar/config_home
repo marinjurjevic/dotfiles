@@ -50,8 +50,8 @@ dpi = 92
 modules-left = google-chrome outlook youtube reddit vscode
 modules-center = title
 
-background = ${colors.bar_transparent}
-foreground = ${colors.bar_fg}
+background = ${colors.bar_bg_default}
+foreground = ${colors.bar_fg_default}
 
 ;line-color = ${bar/bottom.background}
 ;line-size = 2
@@ -97,8 +97,8 @@ overline-size = 10
 underline-size = 2
 ;underline-color = ${self.background}
 
-background = ${colors.bar_transparent}
-foreground = ${colors.bar_fg}
+background = ${colors.bar_bg_default}
+foreground = ${colors.bar_fg_default}
 
 ;line-color = ${bar/bottom.background}
 ;line-size = 2
@@ -127,8 +127,8 @@ dpi = 92
 modules-center = title
 modules-right = chrome-current-track pulseaudio
 
-background = ${colors.bar_transparent}
-foreground = ${colors.bar_fg}
+background = ${colors.bar_bg_default}
+foreground = ${colors.bar_fg_default}
 
 ;line-color = ${bar/bottom.background}
 ;line-size = 2
@@ -174,8 +174,8 @@ overline-size = 10
 underline-size = 2
 ;underline-color = ${self.background}
 
-background = ${colors.bar_transparent}
-foreground = ${colors.bar_fg}
+background = ${colors.bar_bg_default}
+foreground = ${colors.bar_fg_default}
 
 ;line-color = ${bar/bottom.background}
 ;line-size = 2

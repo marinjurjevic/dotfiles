@@ -20,10 +20,10 @@ orange = #ff5733
 ; inactive
 inactive = #444444
 
-bar_default = #1c1e21
-bar_transparent = #50000000
-bar_transparent_dark = #e0000000
-bar_fg= #eee
+bar_bg_default = #1c1e21
+bar_bg_transparent = #50000000
+bar_bg_transparent_dark = #e0000000
+bar_fg_default = #eee
 
 ; performance bar/ramp colors
 value_very_low = ${colors.light_green}
