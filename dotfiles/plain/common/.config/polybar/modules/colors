@@ -36,8 +36,9 @@ value_very_high = #ff5555
 empty_bar = #444444
 
 # i3
-i3_visible_uline= ${colors.light_green} 
-i3_visible_bg = #7cc67c
+i3_uline = ${colors.light_green} 
+i3_focused_uline= ${colors.light_green} 
+i3_visible_bg = #555555
 i3_urgent_bg = #00
 i3_urgent_uline = #bd2c40
 

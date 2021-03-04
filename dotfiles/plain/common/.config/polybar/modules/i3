@@ -43,7 +43,7 @@ label-mode-foreground = ${colors.i3_visible_uline}
 label-focused =  %index%
 label-focused-foreground = #ffffff
 label-focused-background = #3f3f3f
-label-focused-underline = ${colors.i3_visible_uline}
+label-focused-underline = ${colors.i3_focused_uline}
 label-focused-padding = 2
 
 ; Available tokens:
