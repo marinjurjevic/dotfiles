@@ -20,7 +20,7 @@ All applications listed here are mostly mainstream and google is full of documen
 
 
 ## i3
-[config](dotfiles/common/.i3/config)
+[config](dotfiles/plain/common/.i3/config)
 ```
 # remove titlebar from windows
 for_window [class="^.*"] border pixel 1
@@ -88,7 +88,7 @@ assign [class="Pcmanfm"] $ws2
 
 ## polybar
 
-Polybar is aims to speed up creating custom status bars with simple INI format. 
+Polybar aims to speed up creating custom status bars with simple INI format. 
 It comes with a lot of predefined modules and more can be googled as it's really used among ricers. 
 
 If this is your first encounter with polybar, be sure to check [wiki](https://github.com/polybar/polybar/wiki) on their github page. In TOC you'll find `Configuration`, `Fonts` and `Formatting` pages which explain how to format your modules in-depth. In following lines are some guidelines how to integrate icons, fonts, custom scripts and comments on some issues I faced.
@@ -96,11 +96,11 @@ If this is your first encounter with polybar, be sure to check [wiki](https://gi
 ### Configurations
 Configurations are specific to each machine. On laptop there are 3 sets of polybars. All configurations share `misc` and `icon-launchers` modules. All top-level colors are extracted into colors file. All i3-specific configuration are also extracted to file. 
 
-1) **Mobile** - first configuration is when laptop is undocked or connected to yet unknown displays. Autorandr will recognize this and launch [.config/polybar/launch.sh](dotfiles/laptop/.config/polybar/launch.sh) - default launch script. This script has default behavior of mirroring default config to all monitors. Also this configuration is populated with almost all modules. 
+1) **Mobile** - first configuration is when laptop is undocked or connected to yet unknown displays. Autorandr will recognize this and launch [.config/polybar/launch.sh](dotfiles/plain/pc046/.config/polybar/launch.sh) - default launch script. This script has default behavior of mirroring default config to all monitors. Also this configuration is populated with almost all modules. 
 
-2) **Home** - home configuration is launched by [launch_home.sh](dotfiles/laptop/.config/polybar/launch_home.sh). In script hardcoded display interface values are used and different set of top and bottom bars is launched depending on monitor.
+2) **Home** - home configuration is launched by [launch_home.sh](dotfiles/plain/pc046/.config/polybar/launch_home.sh). In script hardcoded display interface values are used and different set of top and bottom bars is launched depending on monitor.
 
-3) **Workstation** - this configuration is used when I'm docked in office, launched by [launch_workstation.sh](dotfiles/laptop/.config/polybar/launch_workstation.sh). Just like home launch, it launches 3 sets of polybars on known monitors. Second external monitor does not have a top bar (now there is plently of room with 5 polybars :D - but I'm thinking of custom module for displaying audio visualizer or listing currently running docker containers).
+3) **Workstation** - this configuration is used when I'm docked in office, launched by [launch_workstation.sh](dotfiles/plain/pc046/.config/polybar/launch_workstation.sh). Just like home launch, it launches 3 sets of polybars on known monitors. Second external monitor does not have a top bar (now there is plently of room with 5 polybars :D - but I'm thinking of custom module for displaying audio visualizer or listing currently running docker containers).
 
   - All bars are launched with info logs turned on and redirected to `/tmp` folder. Tip for debugging (e.g. module not showing): `cat /tmp/polybar*.log | grep error`.
   - All bottom bars use i3 module for displaying workspaces assigned to monitor on which polybar is launched. 
@@ -145,7 +145,7 @@ Straightforward - corresponding icons with click-* actions implemented. Cool thi
 
 
 ## rxvt-unicode
-[.Xresources](dotfiles/common/.Xresources)
+[.Xresources](dotfiles/plain/common/.Xresources)
 
 *I did not have success with this terminal in debian in combination with nerd fonts*
 
@@ -168,9 +168,9 @@ URxvt*cursorColor:                  #f200ff
 ```
 
 ## oh-my-zsh
-[.zshrc](dotfiles/common/.zshrc)
+[.zshrc](dotfiles/plain/common/.zshrc)
 
-[gnzsh.zsh-theme](dotfiles/common/.oh-my-zsh/custom/themes/gnzh.zsh-theme)
+[gnzsh.zsh-theme](dotfiles/plain/common/.oh-my-zsh/custom/themes/gnzh.zsh-theme)
 
 
 ```
@@ -209,10 +209,10 @@ SSH version
 ![urxvt_zsh_ssh](docs/images/urxvt_zsh_ssh.png)
 
 ## rofi
-[config](dotfiles/common/.config/rofi/config.rasi)
+[config](dotfiles/plain/common/.config/rofi/config.rasi)
 
-All default, except [material](dotfiles/common/.config/rofi/material.rasi) theme.
-There's also [my_theme.rasi](dotfiles/common/.config/rofi/my_theme.rasi) which I don't use anymore...
+All default, except [material](dotfiles/plain/common/.config/rofi/material.rasi) theme.
+There's also [my_theme.rasi](dotfiles/plain/common/.config/rofi/my_theme.rasi) which I don't use anymore...
 
 Rofi comes with different modis, here three main ones are used. 
   - `run` - launch applications
@@ -245,7 +245,7 @@ To learn more about layout, check [man](http://manpages.ubuntu.com/manpages/bion
 
 ## VSCode
 
-You can check [keybindings.json](dotfiles/common/.config/Code/User/keybindings.json) for escaping some character sequences in terminal (e.g. Ctrl + N for next command). 
+You can check [keybindings.json](dotfiles/plain/common/.config/Code/User/keybindings.json) for escaping some character sequences in terminal (e.g. Ctrl + N for next command). 
 Most of the settings.json entries are related to extensions. Here's few on top that are setting up theme, icons, font and integrated terminal settings.
 ```
 "terminal.integrated.commandsToSkipShell": [
@@ -273,11 +273,11 @@ Most of the settings.json entries are related to extensions. Here's few on top t
     "editor.fontFamily": "TerminessTTF Nerd Font",
     "editor.fontWeight": "bold",
 ```
-I still use same [settings.json](dotfiles/common/.config/Code/User/settings.json) for multiple machines which is not good...
+I still use same [settings.json](dotfiles/plain/common/.config/Code/User/settings.json) for multiple machines which is not good...
 
 
 ## cava
-[config](dotfiles/common/.config/cava/config)
+[config](dotfiles/plain/common/.config/cava/config)
 
 Console-based Audio Visualizer for Alsa. Not much to say here, except make sure to turn on method = ncurses for gradient option.
 ```
@@ -293,7 +293,7 @@ gradient_color_4 = '#FF3300'
 
 
 ## picom
-[config](dotfiles/common/.config/picom/picom.conf)
+[config](dotfiles/plain/common/.config/picom/picom.conf)
 
 Picom is a modern compton fork - compositor for X11. It supports blur, but it must be run with experimental/glx flags.
 ```
@@ -323,9 +323,9 @@ shadow-exclude = [
 autorandr automatically select a display configuration based on connected devices. It's a must have when using laptop. So my idea was to keep three separate hooks depending on which configuration is loaded. Two things that change between these configurations are i3 workspaces and polybars. i3 is handled in config by specifying mulitple monitors for single workspace.
 For polybar, I just launch different set of polybars depending on which hook is triggered.
 
-  - [mobile](dotfiles/laptop/.config/autorandr/mobile/postswitch) - when laptop is undocked. In this configuration default polybars are launched.
-  - [workstation](dotfiles/laptop/.config/autorandr/workstation/postswitch) - when laptop is docked on work (2 monitors) polybars from config_workstation are launched
-  - [home](dotfiles/laptop/.config/autorandr/home/postswitch) - when laptop is home it's connected to monitor over HDMI and config_home polybars are launched
+  - [mobile](dotfiles/plain/pc046/.config/autorandr/mobile/postswitch) - when laptop is undocked. In this configuration default polybars are launched.
+  - [workstation](dotfiles/plain/pc046/.config/autorandr/workstation/postswitch) - when laptop is docked on work (2 monitors) polybars from config_workstation are launched
+  - [home](dotfiles/plain/pc046/.config/autorandr/home/postswitch) - when laptop is home it's connected to monitor over HDMI and config_home polybars are launched
 
 ### Useful links:
 - [256-bit color map](https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg)
