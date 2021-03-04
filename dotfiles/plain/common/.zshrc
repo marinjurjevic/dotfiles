@@ -100,9 +100,19 @@ less_termcap[so]="${fg_bold[white]}${bg_bold[red]}"
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+ --color=fg:-1,bg:-1,hl:002
+ --color=fg+:-1,bg+:-1,hl+:001
+ --color=info:003,prompt:002,pointer:001
+ --color=marker:003,spinner:003,header:002'
+
+
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 
 export FZF_CTRL_R_OPTS=$FZF_DEFAULT_OPTS
+
+# forgit - append fzf defaults
+export FORGIT_FZF_DEFAULT_OPTS=$FORGIT_FZF_DEFAULT_OPTS$FZF_DEFAULT_OPTS
 
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.
