@@ -11,7 +11,7 @@ echo "---" | tee -a /tmp/polybar_bottom.log /tmp/polybar_top.log
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
     MONITOR=$m polybar -l info bottom >>/tmp/polybar_bottom.log 2>&1 &
-    MONITOR=$m polybar -l info top >>/tmp/polybar_top.log 2>&1 &
+    #MONITOR=$m polybar -l info top >>/tmp/polybar_top.log 2>&1 &
 
   done
 else
