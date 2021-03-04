@@ -32,8 +32,8 @@ include /usr/share/doc/task/rc/dark-256.theme
 # Color overrides
 color.active = rgb000 on rgb050
 color.alternate = on color238
-color.blocking = color232 on color9
 color.blocked = color9
+color.blocking = rgb000 on color9
 color.burndown.done = color0 on rgb050
 
 color.calendar.due = rgb000 on color11
@@ -47,7 +47,7 @@ color.overdue = rgb500 on color232
 color.summary.background = color0 on color238
 color.summary.bar = color0 on rgb050
 color.sync.added = rgb050
-color.tag.none = color245
+color.tag.none = 
 color.tagged =
 
 
