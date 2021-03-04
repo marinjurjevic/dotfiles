@@ -1,0 +1,69 @@
+configuration {
+  show-icons: true;
+  font: "TerminessTTFNerdFont Bold 12";
+  drun-display-format: "{icon} {name}";
+  display-run: " ";
+  display-ssh: " ";
+  display-window: " ";
+  modi: "window,run,ssh";
+}
+
+* {
+  background-color: #21212150;
+  fg: #c9c9c9;
+  light-blue-3: #c08d5d;
+  
+  border: 0;
+  lines: 12;
+  padding: 0;
+  margin: 0;
+  spacing: 0;
+
+}
+
+window {
+  border-radius: 10;
+  width: 40%;
+  transparency: "real";
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+listview {
+  columns: 1;
+}
+
+element {
+  background-color: #0000;
+  border-radius: 14;
+  padding: 12;
+  text-color: @fg;
+}
+
+element selected {
+  background-color: #0000;
+  text-color: @light-blue-3;
+}
+
+inputbar {
+  background-color: #0000;
+  children: [prompt, entry];
+}
+
+prompt {
+  enabled: true;
+  font: "TerminessTTFNerdFont Bold 12";
+  padding: 12 0 0 12;
+  text-color: @light-blue-3;
+}
+
+entry {
+  padding: 12;
+  text-color: @light-blue-3;
+}
+
+element-icon {
+    size:             1.0em ;
+}
