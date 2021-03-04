@@ -89,6 +89,7 @@ plugins=(
   forgit
   fzf
   git
+  git-open
   systemd
   taskwarrior
   zsh-autosuggestions
