@@ -68,6 +68,19 @@ ZSH_THEME="gnzh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+forgit_log=fglog
+forgit_diff=fgd
+forgit_add=fga
+forgit_reset_head=fgrh
+forgit_ignore=fgi
+forgit_checkout_file=fgcf
+forgit_clean=fgclean
+forgit_stash_show=fgsts
+forgit_cherry_pick=fgcp
+forgit_rebase=fgrb
+forgit_checkout_branch=fgco
+
 plugins=(
   archlinux
   autojump
