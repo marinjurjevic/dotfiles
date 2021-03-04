@@ -5,8 +5,8 @@
 ; PREDEFINED COLORS
 
 ; light green
-light_green = #afffaf
-; light_green = #7cc67c
+; light_green = #afffaf
+light_green = #7cc67c
 
 ; light_blue
 light_blue = #12c8ff
