@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles v1 (2020)
 
 - [i3](https://github.com/i3/i3)
 - [polybar](https://github.com/polybar/polybar)
@@ -330,3 +330,13 @@ For polybar, I just launch different set of polybars depending on which hook is 
 ### Useful links:
 - [256-bit color map](https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg)
 - [Character map browser](http://mathew-kurian.github.io/CharacterMap/)
+
+# WIP: dotfiles v2 (2021+)
+- [vim - extensive guide (plugins/remaps)]
+- [zsh - new plugins - fzf hacks]
+- [fzf](https://github.com/junegunn/fzf)
+- [bat](https://github.com/sharkdp/bat)
+- [taskwarrior](https://taskwarrior.org/)
+
+
+
