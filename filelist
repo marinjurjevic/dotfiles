@@ -30,6 +30,9 @@
 # login settings
 .profile
 
+# task warrior
+.taskrc
+
 # vim
 .vimrc
 
