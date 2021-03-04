@@ -35,6 +35,7 @@ endif
 call plug#begin()
 
 Plug 'joshdick/onedark.vim'
+Plug 'sheerun/vim-polyglot'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer' }
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
@@ -46,15 +47,36 @@ Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " onedark
-" Uncomment this to have transparent background
+
+let g:onedark_color_overrides = {
+\ "black": {"gui": "#A1AEC9", "cterm": "008", "cterm16": "0" },
+\ "gutter_fg_grey": {"gui": "#A1AEC9", "cterm": "240", "cterm16": "0" },
+\ "menu_grey": {"gui": "#A1AEC9", "cterm": "059", "cterm16": "0" },
+\ "visual_grey": {"gui": "#A1AEC9", "cterm": "200", "cterm16": "0" },
+\ "comment_grey": {"gui": "#A1AEC9", "cterm": "240", "cterm16": "0" },
+\ "cursor_grey": {"gui": "NONE", "cterm": "NONE", "cterm16": "0" },
+\ "special_grey": {"gui": "#A1AEC9", "cterm": "011", "cterm16": "0" },
+\ "vertsplit": {"gui": "#A1AEC9", "cterm": "240", "cterm16": "0" },
+\}
+
+
+" onedark.vim override: Don't set a background color when running in a
+" terminal; just use the terminal's background color
 if (has("autocmd") && !has("gui_running"))
   augroup colorset
     autocmd!
     let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) 
-    " `bg` will not be styled since there is no `bg` setting
+    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
   augroup END
 endif
+
+"if (has("autocmd") && !has("gui_running"))
+"  augroup colors
+"    autocmd!
+"    let s:background = { "gui": "#282C34", "cterm": "236", "cterm16": "0" }
+"    autocmd ColorScheme * call onedark#set_highlight("Normal", { "bg": s:background }) "No `fg` setting
+"  augroup END
+"endif
 
 syntax on
 colorscheme onedark
