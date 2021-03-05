@@ -443,9 +443,9 @@ bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 
 # start rofi
-bindsym $mod+d exec --no-startup-id rofi -show run 
-bindsym Mod1+Tab exec --no-startup-id rofi -show window
-bindsym $mod+s exec --no-startup-id rofi -show ssh
+bindsym Mod1+Tab exec --no-startup-id rofi -show window -theme material_blue
+bindsym $mod+d exec --no-startup-id rofi -show run -theme material_green 
+bindsym $mod+s exec --no-startup-id rofi -show ssh -theme material_red
 
 # Lock screen
 bindsym $mod+9 exec --no-startup-id blurlock
