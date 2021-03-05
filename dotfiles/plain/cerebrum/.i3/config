@@ -469,7 +469,6 @@ bindsym $mod+Shift+l move right
 # Open applications on specific workspaces
 assign [class="Hamsket"] $ws1
 assign [class="Google-chrome"] $ws3
-assign [class="Pcmanfm"] $ws2
 
 # enable floating mode
 for_window [class="nrfconnect"] floating enable

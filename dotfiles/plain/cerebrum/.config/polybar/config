@@ -193,8 +193,8 @@ overline-size = 10
 underline-size = 2
 ;underline-color = ${self.background}
 
-background = ${colors.bar_transparent}
-foreground = ${colors.bar_fg}
+background = ${colors.bar_bg_default}
+foreground = ${colors.bar_fg_default}
 
 ;line-color = ${bar/bottom.background}
 ;line-size = 2
