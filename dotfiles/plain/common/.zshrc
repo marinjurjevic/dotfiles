@@ -126,6 +126,9 @@ export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 
 export FZF_CTRL_R_OPTS=$FZF_DEFAULT_OPTS
 
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
+export FZF_ALT_C_OPTS=$FZF_DEFAULT_OPTS
+
 # forgit - append fzf defaults
 export FORGIT_FZF_DEFAULT_OPTS=$FORGIT_FZF_DEFAULT_OPTS$FZF_DEFAULT_OPTS
 
