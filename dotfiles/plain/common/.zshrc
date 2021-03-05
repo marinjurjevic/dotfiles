@@ -84,7 +84,7 @@ forgit_checkout_branch=fgco
 plugins=(
   archlinux
   autojump
-  colored-man-pages
+#  colored-man-pages
   docker
   forgit
   fzf
@@ -106,9 +106,9 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 
 # colored-man-pages
-less_termcap[mb]="${fg_bold[red]}"
-less_termcap[md]="${fg_bold[red]}"
-less_termcap[so]="${fg_bold[white]}${bg_bold[red]}"
+# less_termcap[mb]="${fg_bold[red]}"
+# less_termcap[md]="${fg_bold[red]}"
+# less_termcap[so]="${fg_bold[white]}${bg_bold[red]}"
 
 # fzf
 # Options to fzf commands
@@ -144,6 +144,8 @@ _fzf_compgen_dir() {
 
 
 # export MANPATH="/usr/local/man:$MANPATH"
+# use bat for man
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
