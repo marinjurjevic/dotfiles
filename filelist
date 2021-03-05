@@ -17,6 +17,7 @@
 # zsh
 .zshrc
 .oh-my-zsh/custom/themes/gnzh.zsh-theme
+.oh-my-zsh/custom/scripts/fzf.sh
 
 # i3-wm
 .i3/config:cerebrum
