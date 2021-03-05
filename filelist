@@ -77,6 +77,7 @@
 .config/rofi/config.rasi
 .config/rofi/material.rasi
 .config/rofi/material_blue.rasi
+.config/rofi/material_green.rasi
 .config/rofi/material_orange.rasi
 .config/rofi/material_red.rasi
 .config/rofi/my_theme.rasi

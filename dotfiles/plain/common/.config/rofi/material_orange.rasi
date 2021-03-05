@@ -11,7 +11,7 @@ configuration {
 * {
   background-color: #21212150;
   fg: #c9c9c9;
-  light-blue-3: #c08d5d;
+  orange: #c08d5d;
   
   border: 0;
   lines: 12;
@@ -44,7 +44,7 @@ element {
 
 element selected {
   background-color: #0000;
-  text-color: @light-blue-3;
+  text-color: @orange;
 }
 
 inputbar {
@@ -56,12 +56,12 @@ prompt {
   enabled: true;
   font: "TerminessTTFNerdFont Bold 12";
   padding: 12 0 0 12;
-  text-color: @light-blue-3;
+  text-color: @orange;
 }
 
 entry {
   padding: 12;
-  text-color: @light-blue-3;
+  text-color: @orange;
 }
 
 element-icon {
