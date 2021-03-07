@@ -1,0 +1,16 @@
+[module/backlight]
+type=internal/backlight
+
+card = intel_backlight
+
+format = <ramp>
+format-font = 3 
+format-foreground = #f9ac26
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-5 = 
+ramp-6 = 
+ramp-7 = 
