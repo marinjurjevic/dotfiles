@@ -31,7 +31,7 @@ format = <label-state> <label-mode>
 ; Default: %mode%
 label-mode = %mode%
 label-mode-padding = 0
-label-mode-foreground = ${colors.i3_visible_uline}
+label-mode-foreground = ${colors.i3_uline}
 ;label-mode-background = #e60053
 
 ; Available tokens:

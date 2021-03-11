@@ -13,7 +13,7 @@ echo "---" | tee -a /tmp/polybar_bottom2.log /tmp/polybar_top2.log
 echo "---" | tee -a /tmp/polybar_bottom3.log
 
 
-MONITOR="eDP1" polybar -l info bottom -c $CONFIG_FILE >>/tmp/polybar_bottom.log 2>&1 &
+MONITOR="DP1" polybar -l info bottom -c $CONFIG_FILE >>/tmp/polybar_bottom.log 2>&1 &
 # MONITOR="eDP1" polybar -l info top -c $CONFIG_FILE >>/tmp/polybar_top.log 2>&1 &
 
 MONITOR="DP2-1" polybar -l info bottom2 -c $CONFIG_FILE >>/tmp/polybar_bottom2.log 2>&1 &

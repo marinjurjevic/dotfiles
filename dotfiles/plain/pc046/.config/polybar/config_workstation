@@ -156,7 +156,7 @@ dpi = 92
 
 modules-left = i3 
 modules-center = date current-keyboard-layout
-modules-right = battery updates-arch-combined dropbox backlight powermenu 
+modules-right = battery updates-arch-combined dropbox 
 
 wm-restack = i3
 
@@ -203,7 +203,7 @@ height = 25
 dpi = 92
 
 modules-left = i3 
-modules-right = filesystem
+modules-right = filesystem pulseaudio
 
 wm-restack = i3
 
