@@ -71,6 +71,8 @@
 .config/autorandr/workstation/postswitch:pc046
 .config/autorandr/workstation/setup:pc046
 
+# dunst
+.config/dunst/dunstrc
 
 # picom 
 .config/picom/picom.conf
