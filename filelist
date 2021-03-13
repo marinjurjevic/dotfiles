@@ -18,6 +18,7 @@
 .zshrc
 .oh-my-zsh/custom/themes/gnzh.zsh-theme
 .oh-my-zsh/custom/themes/gnzh_timestamp.zsh-theme
+.oh-my-zsh/custom/scripts/chrome_history.sh
 .oh-my-zsh/custom/scripts/fzf.sh
 
 # i3-wm
