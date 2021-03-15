@@ -186,3 +186,6 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 for script in $ZSH_CUSTOM/scripts/*; do
   source $script
 done
+
+# Shell Options
+setopt EXTENDED_GLOB
