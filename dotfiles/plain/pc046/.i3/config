@@ -417,6 +417,7 @@ exec --no-startup-id autorandr -c
 
 ### Autostart
 exec --no-startup-id "sleep 2; nice -n 10 hamsket"
+exec --no-startup-id "sleep 2; nice -n 10 spotify"
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id "sleep 2; nitrogen --restore; sleep 1; picom -b --experimental-backends --backend glx"
 exec --no-startup-id xfce4-power-manager
@@ -467,11 +468,10 @@ bindsym $mod+Shift+l move right
 
 # Open applications on specific workspaces
 assign [class="Hamsket"] $ws1
-assign [class="Google-chrome"] $ws3
+assign [class="Spotify"] $ws1
 
 # enable floating mode
 for_window [class="nrfconnect"] floating enable
-for_window [class="Protobuf Analyzer"] floating enable
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
