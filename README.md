@@ -20,7 +20,7 @@ All applications listed here are mostly mainstream and google is full of documen
 
 
 ## i3
-[config](dotfiles/plain/common/.i3/config)
+[pc046 config](dotfiles/plain/pc046/.i3/config)
 ```
 # remove titlebar from windows
 for_window [class="^.*"] border pixel 1
