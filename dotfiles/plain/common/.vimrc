@@ -13,7 +13,11 @@ set signcolumn=yes
 set laststatus=2
 set updatetime=100
 
+" custom escape
 inoremap jk <Esc>
+
+" open URL in default browser
+nmap gx :!xdg-open <c-r><c-a><CR><CR>
 
 " cursor control
 let &t_SI = "\e[4 q"

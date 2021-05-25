@@ -38,6 +38,10 @@
         "editorRuler.foreground": "#1a5f2b"
     },
 
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 100,
+    "editor.minimap.showSlider": "always",
+    "editor.copyWithSyntaxHighlighting" : false,
     "editor.fontSize": 14.3,
     "terminal.integrated.fontSize": 15,
     "editor.fontLigatures": true,
@@ -46,7 +50,6 @@
     "editor.tabSize": 4,
     "editor.rulers": [80,120],
     "workbench.iconTheme": "ayu",
-    "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
     "C_Cpp.updateChannel": "Insiders",
 
@@ -81,6 +84,7 @@
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+    "gitlens.mode.active": "zen"
 
 }
