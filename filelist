@@ -38,6 +38,9 @@
 # task warrior
 .taskrc
 .task/dark-256_custom.theme
+.task/ca.cert.pem|encrypt
+.task/client.cert.pem|encrypt
+.task/client.key.pem|encrypt
 
 # vim
 .vimrc
