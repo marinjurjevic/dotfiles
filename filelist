@@ -159,6 +159,8 @@
 # Qt4 theme
 .config/Trolltech.conf
 
+# keyledsd
+.config/keyledsd.conf
 
 #-----------------#
 # Encrypted Files #
