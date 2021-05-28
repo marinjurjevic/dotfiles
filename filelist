@@ -162,6 +162,12 @@
 # keyledsd
 .config/keyledsd.conf
 
+#--------------#
+# .local/bin/* #
+#--------------#
+
+.local/bin/blurlock
+
 #-----------------#
 # Encrypted Files #
 #-----------------#
