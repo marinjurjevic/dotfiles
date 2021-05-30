@@ -19,3 +19,4 @@ alias get_esp_idf='export IDF_PATH=/home/marin/vendor/Espressif/esp32/esp-idf; e
 alias th='task +home'
 alias tw='task +work'
 alias tx='task -work and -home'
+alias tp='task +PROJECT'

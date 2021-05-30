@@ -32,6 +32,15 @@ data.location=~/.task
 # Custom color theme
 include ~/.task/dark-256_custom.theme
 
+# Date
+dateformat=D-M-Y
+dateformat.holiday=DMY
+dateformat.edit=D-M-Y
+dateformat.info=D-M-Y
+
+# All
+report.all.columns=id,status.short,uuid.short,start.active,entry.age,end.age,depends.indicator,priority,project,tags.count,recur.indicator,wait.remaining,scheduled.remaining,due,until.remaining,description
+
 # Task Server
 taskd.certificate=\/home\/marin\/.task\/client.cert.pem
 taskd.key=\/home\/marin\/.task\/client.key.pem
