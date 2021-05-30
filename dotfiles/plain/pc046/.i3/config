@@ -471,6 +471,7 @@ assign [class="Hamsket"] $ws1
 assign [class="Spotify"] $ws1
 
 # enable floating mode
+for_window [class="Nm-connection-editor"] floating enable
 for_window [class="nrfconnect"] floating enable
 
 # Workspace names

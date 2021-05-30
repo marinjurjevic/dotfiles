@@ -7,7 +7,7 @@ format-connected = <label-connected>
 format-connected-prefix = 
 format-connected-prefix-foreground = ${colors.light_blue}
 format-connected-prefix-padding = 2
-label-connected = %essid% %local_ip% %downspeed% %upspeed%
+label-connected = %{A1:nm-connection-editor:}%essid% %local_ip% %downspeed% %upspeed%%{A}
 
 format-disconnected = <label-disconnected>
 format-disconnected-prefix = 
