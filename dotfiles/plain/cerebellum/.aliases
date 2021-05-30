@@ -1,0 +1,22 @@
+# custom aliases
+
+alias g='gss .'
+alias gs='git status'
+alias lc='ls -ld $HOME/.?*'
+alias lcs="ls -ld $HOME/.?* | tr -s ' ' | cut -d ' ' -f9"
+
+alias rmr='rm -r'
+alias cpr='cp -r'
+
+
+# ByteLab win server
+alias rdwin="echo -n 'Password: '; read -s winPswd ; xfreerdp /u:mjurjevic /v:win.byte-lab.com:3389 /cert-ignore /audio /mic /dynamic-resolution +home-drive +gfx-h264 /gdi:hw /p:\$(echo \$winPswd) & disown ; winPswd=''"
+
+# Espressif
+alias get_esp_idf='export IDF_PATH=/home/marin/vendor/Espressif/esp32/esp-idf; export IDF_TOOLS_PATH=/home/marin/vendor/Espressif/tools/; source $IDF_PATH/export.sh &> /dev/null; echo "idf.py ready to use"'
+
+# task warrior
+alias th='task +home'
+alias tw='task +work'
+alias tx='task -work and -home'
+alias tp='task +PROJECT'
