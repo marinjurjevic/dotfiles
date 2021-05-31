@@ -444,7 +444,7 @@ bindsym $mod+F3 exec pcmanfm
 
 # start rofi
 bindsym Mod1+Tab exec --no-startup-id rofi -show window -theme material_blue
-bindsym $mod+d exec --no-startup-id rofi -show run -theme material_green 
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme material_green 
 bindsym $mod+s exec --no-startup-id rofi -show ssh -theme material_red
 
 # Lock screen

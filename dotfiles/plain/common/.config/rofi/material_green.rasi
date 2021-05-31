@@ -2,6 +2,7 @@ configuration {
   show-icons: true;
   font: "TerminessTTFNerdFont Bold 12";
   drun-display-format: "{icon} {name}";
+  display-drun: " ";
   display-run: " ";
   display-ssh: " ";
   display-window: " ";
