@@ -5,7 +5,8 @@ configuration {
   display-run: " ";
   display-ssh: " ";
   display-window: " ";
-  modi: "window,run,ssh";
+  display-windowcd: " ";
+  modi: "window,windowcd,ssh,run,drun";
 }
 
 * {
