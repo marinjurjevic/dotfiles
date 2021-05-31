@@ -17,6 +17,9 @@ army_green = #4b5320
 ; orange
 orange = #ff5733
 
+; red
+red = #de4537
+
 ; inactive
 inactive = #444444
 

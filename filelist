@@ -92,6 +92,9 @@ cerebellum=cerebellum,alias,zsh,vim
 .config/rofi/material_orange.rasi
 .config/rofi/material_red.rasi
 .config/rofi/my_theme.rasi
+.config/rofi/ssh_sessions.rasi
+
+.config/rofi/scripts/ssh_sessions_menu.sh
 
 # polybar - cerebrum
 .config/polybar/launch.sh:cerebrum
@@ -136,6 +139,7 @@ cerebellum=cerebellum,alias,zsh,vim
 .config/polybar/modules/misc/powermenu
 .config/polybar/modules/misc/title
 .config/polybar/modules/misc/volume
+.config/polybar/modules/misc/ssh
 
 .config/polybar/modules/icon_launchers/google-chrome
 .config/polybar/modules/icon_launchers/outlook
@@ -146,6 +150,7 @@ cerebellum=cerebellum,alias,zsh,vim
 .config/polybar/scripts/chrome_current_track.sh
 .config/polybar/scripts/dropbox_status.sh
 .config/polybar/scripts/updates_arch_combined.sh
+.config/polybar/scripts/ssh_sessions_count.sh
 
 # cava - audio visualizer
 .config/cava/config
@@ -168,6 +173,7 @@ cerebellum=cerebellum,alias,zsh,vim
 #--------------#
 
 .local/bin/blurlock
+.local/bin/ssh_sessions
 
 #-----------------#
 # Encrypted Files #

@@ -1,0 +1,48 @@
+configuration {
+  font: "TerminessTTFNerdFont Bold 11";
+}
+
+* {
+  background-color: #21212150;
+  fg: #c9c9c9;
+  red: #de4537;
+  
+  border: 0;
+  padding: 0;
+  margin: 0;
+  spacing: 0;
+
+}
+
+window {
+  border-radius: 10;
+  width: 300;
+  transparency: "real";
+}
+
+mainbox {
+  children: [listview];
+}
+
+listview {
+  columns: 1;
+  lines: 3;
+  padding: 5;
+}
+
+element {
+  background-color: #0000;
+  border-radius: 14;
+  padding: 2;
+  text-color: @fg;
+}
+
+element selected {
+  background-color: #0000;
+  text-color: @red;
+}
+
+entry {
+  padding: 0;
+  text-color: @red;
+}

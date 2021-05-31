@@ -1,0 +1,11 @@
+[module/ssh]
+type = custom/script
+
+format = <label>
+label = %output%
+format-prefix =   
+format-prefix-foreground = ${colors.red}
+exec = ~/.config/polybar/scripts/ssh_sessions_count.sh
+interval = 1
+
+click-left = ~/.config/rofi/scripts/ssh_sessions_menu.sh
