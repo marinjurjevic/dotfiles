@@ -5,7 +5,7 @@
 git clone https://github.com/wfxr/forgit $HOME/.oh-my-zsh/custom/plugins/forgit
 
 # git-open
-git clone https://github.com/paulirish/git-open $HOME/.oh-my-zsh/custom/plugins/got-open
+git clone https://github.com/paulirish/git-open $HOME/.oh-my-zsh/custom/plugins/git-open
 
 # zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
