@@ -7,6 +7,9 @@ cerebrum=common,cerebrum,alias,zsh,vim
 pc046=common,pc046,alias,zsh,vim
 cerebellum=cerebellum,alias,zsh,vim
 
+# public server
+server=alias,zsh,vim
+
 #-----------#
 #     ~/    #
 #-----------#
@@ -21,12 +24,12 @@ cerebellum=cerebellum,alias,zsh,vim
 .oh-my-zsh/custom/scripts/chrome_history.sh:zsh
 .oh-my-zsh/custom/scripts/fzf.sh:zsh
 
+.oh-my-zsh/custom/plugins/install.sh
 .oh-my-zsh/tools/upgrade.sh:zsh
 
 # i3-wm
 .i3/config:cerebrum
 .i3/config:pc046
-
 
 # urxvt
 .urxvt/ext/fork-here
