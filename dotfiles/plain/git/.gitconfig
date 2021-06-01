@@ -1,0 +1,7 @@
+[user]
+	email = marin.jurjevic@hotmail.com
+	name = Marin Jurjevic
+[core]
+	editor = vim
+[pull]
+	ff = only

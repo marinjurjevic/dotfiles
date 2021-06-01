@@ -3,12 +3,12 @@
 ###################
 
 # group machine specific categories
-cerebrum=common,cerebrum,alias,zsh,vim
-pc046=common,pc046,alias,zsh,vim
-cerebellum=cerebellum,alias,zsh,vim
+cerebrum=common,cerebrum,alias,zsh,vim,git
+pc046=common,pc046,alias,zsh,vim,git
+cerebellum=cerebellum,alias,zsh,vim,git
 
 # public server
-headless=alias,zsh,vim
+headless=alias,zsh,vim,git
 
 #-----------#
 #     ~/    #
@@ -26,6 +26,9 @@ headless=alias,zsh,vim
 
 .oh-my-zsh/custom/plugins/install.sh:zsh
 .oh-my-zsh/tools/upgrade.sh:zsh
+
+# git
+.gitconfig:git
 
 # i3-wm
 .i3/config:cerebrum
