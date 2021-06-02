@@ -29,6 +29,7 @@ headless=alias,zsh,vim,git
 
 # git
 .gitconfig:git
+.gitconfig-work:git
 
 # i3-wm
 .i3/config:cerebrum

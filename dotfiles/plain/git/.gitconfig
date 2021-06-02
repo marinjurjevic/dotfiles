@@ -1,7 +1,11 @@
 [user]
 	email = marin.jurjevic@hotmail.com
-	name = Marin Jurjevic
+	name = Marin Jurjević
 [core]
 	editor = vim
+	pager = bat -p
 [pull]
 	ff = only
+
+[includeIf "gitdir:~/code/projects/"]
+	path = ~/.gitconfig-work
