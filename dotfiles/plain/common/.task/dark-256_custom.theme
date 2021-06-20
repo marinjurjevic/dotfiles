@@ -60,8 +60,8 @@ color.tag.none =
 color.tagged =
 
 # Due
-color.due.today=rgb400
-color.due = color11
+color.due.today= rgb500
+color.due = color1
 color.overdue = rgb500 on color232
 
 # Report: burndown
@@ -79,12 +79,12 @@ color.summary.background = color0 on color238
 color.summary.bar = color0 on rgb050
 
 # Command: calendar
-color.calendar.due = rgb000 on color11
-color.calendar.due.today = rgb000 on color1
-color.calendar.holiday=color0 on color11
+color.calendar.due = color1
+color.calendar.due.today = rgb500
+color.calendar.holiday= color11
 color.calendar.overdue = rgb500 on color232
 color.calendar.today = rgb000 on rgb050
-color.calendar.weekend=on color235
+color.calendar.weekend = color8
 color.calendar.weeknumber = color4
 
 # Command: sync

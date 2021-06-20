@@ -32,13 +32,17 @@ data.location=~/.task
 # Custom color theme
 include ~/.task/dark-256_custom.theme
 
-# Date
+include /usr/share/doc/task/rc/holidays.hr-HR.rc
+
+# Date / Calendar
+weekstart=monday
 dateformat=D-M-Y
-dateformat.holiday=DMY
 dateformat.edit=D-M-Y
 dateformat.info=D-M-Y
+dateformat.holiday=YMD # Exception because included holidays rc file uses this format
+calendar.holidays=full
 
-# All
+# Report
 report.all.columns=id,status.short,uuid.short,start.active,entry.age,end.age,depends.indicator,priority,project,tags.count,recur.indicator,wait.remaining,scheduled.remaining,due,until.remaining,description
 
 # Task Server
@@ -51,3 +55,4 @@ taskd.credentials=Public\/Marin Jurjevic\/cfa12451-cb1a-4bc1-98c6-4488b70d07e7
 # Context
 context.home=+home
 context.work=+work
+rule.color.merge=0
