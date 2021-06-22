@@ -129,3 +129,4 @@ let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline --multi'
 let g:fzf_preview_window = ['right:50%', 'ctrl-/']
 
 nnoremap <silent> <leader>o :Files<CR>
+nnoremap <silent> <leader>b :Buffers<CR>
