@@ -19,8 +19,7 @@ configuration {
   lines: 12;
   padding: 0;
   margin: 0;
-  spacing: 0;
-
+  spacing: 10;
 }
 
 window {
@@ -68,4 +67,9 @@ entry {
 
 element-icon {
     size:             1.0em ;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
 }
