@@ -7,6 +7,7 @@ alias lcs="ls -ld $HOME/.?* | tr -s ' ' | cut -d ' ' -f9"
 
 alias rmr='rm -r'
 alias cpr='cp -r'
+alias scpr='scp -r'
 
 
 # ByteLab win server
