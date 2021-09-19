@@ -10,7 +10,7 @@ configuration {
   border: 0;
   padding: 0;
   margin: 0;
-  spacing: 10;
+  spacing: 0;
 }
 
 window {
@@ -34,6 +34,7 @@ element {
   border-radius: 14;
   padding: 2;
   text-color: @fg;
+  spacing: 10;
 }
 
 element selected {
