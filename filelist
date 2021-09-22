@@ -147,6 +147,7 @@ headless=alias,zsh,vim,git
 .config/polybar/modules/misc/title
 .config/polybar/modules/misc/volume
 .config/polybar/modules/misc/ssh
+.config/polybar/modules/misc/docker
 
 .config/polybar/modules/icon_launchers/google-chrome
 .config/polybar/modules/icon_launchers/outlook
@@ -158,6 +159,7 @@ headless=alias,zsh,vim,git
 .config/polybar/scripts/dropbox_status.sh
 .config/polybar/scripts/updates_arch_combined.sh
 .config/polybar/scripts/ssh_sessions_count.sh
+.config/polybar/scripts/docker_running_containers_count.sh
 
 # cava - audio visualizer
 .config/cava/config

@@ -1,0 +1,9 @@
+[module/docker]
+type = custom/script
+
+format = <label>
+label = %output%
+format-prefix = 
+format-prefix-foreground = ${colors.light_blue}
+exec = ~/.config/polybar/scripts/docker_running_containers_count.sh
+interval = 1
