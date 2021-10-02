@@ -191,3 +191,7 @@ done
 
 # Shell Options
 setopt EXTENDED_GLOB
+
+# direnv
+eval "$(direnv hook zsh)"
+

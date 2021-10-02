@@ -337,6 +337,6 @@ For polybar, I just launch different set of polybars depending on which hook is 
 - [fzf](https://github.com/junegunn/fzf)
 - [bat](https://github.com/sharkdp/bat)
 - [taskwarrior](https://taskwarrior.org/)
-
+- [direnv](https://direnv.net/)
 
 
