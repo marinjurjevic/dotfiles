@@ -22,6 +22,7 @@ include-file = ~/.config/polybar/modules/misc/dropbox-status
 include-file = ~/.config/polybar/modules/misc/date
 include-file = ~/.config/polybar/modules/misc/arch-updates
 include-file = ~/.config/polybar/modules/misc/ssh
+include-file = ~/.config/polybar/modules/misc/docker
 
 # 4) system
 include-file = ~/.config/polybar/modules/system/filesystem
@@ -78,7 +79,7 @@ width = 100%
 height = 25
 dpi = 92
 
-modules-left = i3 ethernet wifi vpn ssh
+modules-left = i3 ethernet wifi vpn ssh docker
 modules-right = cpu memory 
 
 wm-restack = i3
