@@ -9,3 +9,5 @@
 
 [includeIf "gitdir:~/code/projects/"]
 	path = ~/.gitconfig-work
+[merge]
+	tool = vimdiff
