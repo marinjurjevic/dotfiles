@@ -32,6 +32,7 @@ data.location=~/.task
 # Custom color theme
 include ~/.task/dark-256_custom.theme
 
+# Holidays - Croatia locale
 include /usr/share/doc/task/rc/holidays.hr-HR.rc
 
 # Date / Calendar
@@ -51,6 +52,9 @@ taskd.key=\/home\/marin\/.task\/client.key.pem
 taskd.ca=\/home\/marin\/.task\/ca.cert.pem
 taskd.server=dev.byte-lab.com:53589
 taskd.credentials=Public\/Marin Jurjevic\/cfa12451-cb1a-4bc1-98c6-4488b70d07e7
+
+# Jira
+include ~/.task/jira.uda
 
 # Context
 context.home=+home

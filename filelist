@@ -46,9 +46,13 @@ headless=alias,zsh,vim,git
 # task warrior
 .taskrc
 .task/dark-256_custom.theme
+.task/jira.uda
 .task/ca.cert.pem|encrypt
 .task/client.cert.pem|encrypt
 .task/client.key.pem|encrypt
+
+# bugwarrior
+.config/bugwarrior/bugwarriorrc|encrypt
 
 # vim
 .vimrc:vim
