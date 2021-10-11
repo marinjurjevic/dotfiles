@@ -343,7 +343,54 @@ Obsidian is a powerful **knowledge base** on top of  a **local folder** of plain
 fzf is a general-purpose command-line fuzzy finder. On its own, it doesn't do much.  Coupling it with other Unix common tools or any text file makes it a powerful tool.
 It's an interactive Unix filter for command-line that can be used with any list; files, command history, processes, hostnames, bookmarks, git commits, etc.
 
-fzf can be customized with flexible user defined layouts for different use cases. Example of zsh functions using fzff can be found in fzf.sh under [[dotfiles/plain/zsh/.oh-my-zsh/custom/scripts/fzf.sh]]
+fzf can be customized with flexible user defined layouts for different use cases. Example of zsh functions using fzf can be found in fzf.sh under [fzf.sh](dotfiles/plain/zsh/.oh-my-zsh/custom/scripts/fzf.sh)
+
+Here is snippet from [.zshrc](dotfiles/plain/.zshrc) using `fd` as search engine.
+```bash
+# fzf
+# Options to fzf commands
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
+
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+ --color=fg:-1,bg:-1,hl:001
+ --color=fg+:-1,bg+:-1,hl+:002
+ --color=info:003,prompt:003,pointer:002
+ --color=marker:003,spinner:003,header:002'
+
+
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+
+export FZF_CTRL_R_OPTS=$FZF_DEFAULT_OPTS
+
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
+export FZF_ALT_C_OPTS=$FZF_DEFAULT_OPTS
+
+# forgit - append fzf defaults
+export FORGIT_FZF_DEFAULT_OPTS=$FORGIT_FZF_DEFAULT_OPTS$FZF_DEFAULT_OPTS
+
+# Use fd (https://github.com/sharkdp/fd) instead of the default find
+# command for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude ".git" . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude ".git" . "$1"
+}
+
+
+
+```
+
+This assumes the usual keybindgs:
+- `CTRL + T` - search file under current directory
+- `CTRL + R` - search full history
+- `ALT + C` - change directory
+
 
 ## zsh - new plugins
 ```zsh
@@ -491,10 +538,6 @@ There are lot of supported services like Jira, GitHub, GitLab etc.
 ## [direnv](https://direnv.net/)
 Load and unload environment variables depending on the current directory.
 
-- and other less important stuff
-
-
-
 ## updates
 - rofi (new theme)
 - dotgit (new filelist syntax)
@@ -503,3 +546,4 @@ Load and unload environment variables depending on the current directory.
 
 ## TODO:
 - split this README.md sections into dedicated pages per tool
+- add zoho API for syncing issues with bugwarrior
