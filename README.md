@@ -16,12 +16,13 @@
 
 *If you're not using dotgit, make sure to setup that first. It will save you going through this process again ;)*
 
-All applications listed here are mostly mainstream and google is full of documentation how to start. I spent a lot of time customizing settings exactly the way I want them. In average, I would say it took me 10% time to get things running and 90% time getting things to run the way I want them to run. Instead of going through default settings, I will highlight some tweaks I did so you get a feeling how to customize modules the way you want to.
+All applications listed here are mostly mainstream and google is full of documentation how to start. I spent a lot of time customizing settings exactly the way I want them. On average, I would say it took me 10% time to get things running and 90% time getting things to run the way I want them to run. Instead of going through default settings, I will highlight some tweaks I did so you get a feeling how to customize modules.
 
 
 ## i3
+
 [pc046 config](dotfiles/plain/pc046/.i3/config)
-```
+```bash
 # remove titlebar from windows
 for_window [class="^.*"] border pixel 1
 
@@ -151,7 +152,7 @@ Straightforward - corresponding icons with click-* actions implemented. Cool thi
 
 Terminess fonts, which I primarily use, are double (sometimes ~triple) wider than standard fonts. rxvt-unicode does not support these fonts out of the box. To make it work, you need to install [wcwidth-icons](https://github.com/powerman/wcwidth-icons). After installing, add `export LD_PRELOAD=/usr/lib/libwcwidth-icons.so` to your .profile. 
 
-```
+```yaml
 # set font and icon file for rofi
 URxvt.font:                       xft:TerminessTTFNerdFont:size=12:style=Bold
 URxvt*iconFile:                   /usr/share/icons/Papirus/64x64/apps/terminal.svg
@@ -173,7 +174,7 @@ URxvt*cursorColor:                  #f200ff
 [gnzsh.zsh-theme](dotfiles/plain/common/.oh-my-zsh/custom/themes/gnzh.zsh-theme)
 
 
-```
+```bash
 # custom
 ZSH_THEME="gnzh"
 
@@ -247,7 +248,7 @@ To learn more about layout, check [man](http://manpages.ubuntu.com/manpages/bion
 
 You can check [keybindings.json](dotfiles/plain/common/.config/Code/User/keybindings.json) for escaping some character sequences in terminal (e.g. Ctrl + N for next command). 
 Most of the settings.json entries are related to extensions. Here's few on top that are setting up theme, icons, font and integrated terminal settings.
-```
+```json
 "terminal.integrated.commandsToSkipShell": [
         // Ensure the toggle sidebar visibility keybinding skips the shell
         "workbench.action.toggleSidebarVisibility",
@@ -331,12 +332,174 @@ For polybar, I just launch different set of polybars depending on which hook is 
 - [256-bit color map](https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg)
 - [Character map browser](http://mathew-kurian.github.io/CharacterMap/)
 
-# WIP: dotfiles v2 (2021+)
-- [vim - extensive guide (plugins/remaps)]
-- [zsh - new plugins - fzf hacks]
-- [fzf](https://github.com/junegunn/fzf)
-- [bat](https://github.com/sharkdp/bat)
-- [taskwarrior](https://taskwarrior.org/)
-- [direnv](https://direnv.net/)
+---
+
+# dotfiles v2 (2021+)
+
+## [obsidian](https://obsidian.md/)
+Obsidian is a powerful **knowledge base** on top of  a **local folder** of plain text Markdown files. This folder (`dotfiles/`) acts as obsidian vault.
+
+## [fzf](https://github.com/junegunn/fzf)
+fzf is a general-purpose command-line fuzzy finder. On its own, it doesn't do much.  Coupling it with other Unix common tools or any text file makes it a powerful tool.
+It's an interactive Unix filter for command-line that can be used with any list; files, command history, processes, hostnames, bookmarks, git commits, etc.
+
+fzf can be customized with flexible user defined layouts for different use cases. Example of zsh functions using fzff can be found in fzf.sh under [[dotfiles/plain/zsh/.oh-my-zsh/custom/scripts/fzf.sh]]
+
+## zsh - new plugins
+```zsh
+plugins=(
+  archlinux
+  autojump
+  cargo
+  docker
+  forgit
+  fzf
+  git
+  git-open
+  rust
+  rustup
+  systemd
+  taskwarrior
+  zsh-autosuggestions
+  zsh-completions
+  zsh-docker-aliases
+  zsh-syntax-highlighting
+)
+
+```
+
+### [autojump](https://github.com/wting/autojump)
+Autojump is nice utility which helps to easily navigate directories from the command line. 
+It works by maintaining a database of the directories you use the most from the command line. Each entry is weighted base on usage frequency (the more you jump to some location, the more important is ). 
+To check location weights you can run `autojump -s` or just `j -s` if you have zsh plugin.
+
+### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+It suggests commands as you type based on history and completions.
+
+### [forgit](https://github.com/wfxr/forgit)
+ A utility tool powered by fzf for using git interactively.
+ Here's example of searching git commits containing keyword `Dockerfile` since tag v1.5.0
+ ![[fzf_forgit_glog.png]]
+ 
+ Here's example of staging files, filtering first `src/` subdir and selecting relevant ones
+ ![[fzf_forgit_add.png]]
+ 
+ In both cases preview and layout can be customized independently
+ 
+ ### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+t enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
+
+Example of invalid (red) and valid (green) syntax.
+ ![[zsh_invalid_syntax.png]]
+ 
+ ![[zsh_valid_syntax.png]]
+ 
+ ### [git-open](https://github.com/paulirish/git-open)
+ Type `git open` to open the repo website (GitHub, GitLab, Bitbucket) in your browser.
+ 
+ ### other
+ Other plugins are mostly completions and aliases (docker/rust/rustup/systemd/taskwarrior)
+ 
+## vim
+Skip if you're not into vim..
+
+### [vim-plug](https://github.com/junegunn/vim-plug)
+I tried couple of plugin managers and vim-plug is easiest to use and covers all use cases. Follow link for examples on different use cases. 
+
+```vim
+" Plugins (vim-plug)
+
+call plug#begin()
+
+Plug 'joshdick/onedark.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer' }
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdtree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+call plug#end()
 
 
+```
+
+#### [onedark](https://github.com/joshdick/onedark.vim)
+Dark vim theme with simple colors
+
+![[vim_onedark.png]]
+
+
+#### [vim-polyglot](https://github.com/sheerun/vim-polyglot)
+A collection of language packs for Vim.
+
+#### [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
+A code-completion engine for Vim. 
+Backends can be installed as needed, currently supports:
+- C/C++ (clangd based)
+- Python 2 and 3 (jedi based)
+- Go (Gopls based)
+- Rust (rust-analyzer based)
+- and more...
+
+#### [vim-airline](https://github.com/vim-airline/vim-airline)
+Lightweight status bar.
+
+#### [vim-fugitive](https://github.com/tpope/vim-fugitive)
+Premier Vim plugin for Git which comes handy sometimes.
+
+#### [vim-gutter](https://github.com/airblade/vim-gitgutter)
+A Vim plugin which shows a git diff in the sign column. It shows which lines have been added, modified, or removed. You can also preview, stage, and undo individual hunks; and stage partial hunks. 
+
+#### [nerdtree](https://github.com/preservim/nerdtree)
+A tree explorer plugin for vim.
+
+#### [fzf.vim](https://github.com/junegunn/fzf.vim)
+[fzf](https://github.com/junegunn/fzf) in itself is not a Vim plugin, and the official repository only provides the [basic wrapper function](https://github.com/junegunn/fzf/blob/master/README-VIM.md#fzfrun) for Vim and it's up to the users to write their own Vim commands with it.
+
+```vim
+" fzf.vim
+let g:fzf_layout = { 'window': { 'width': 0.6, 'height': 0.6, 'yoffset': 0.5 } }
+
+let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline --multi'
+
+let g:fzf_preview_window = ['right:50%', 'ctrl-/']
+
+nnoremap <silent> <leader>o :Files<CR>
+nnoremap <silent> <leader>b :Buffers<CR>
+
+```
+
+This configuration provides fuzzy search between opened files (buffers) and open. This is very much similar to `Ctrl+P` in VSCode.
+
+## [bat](https://github.com/sharkdp/bat)
+A cat(1) clone with wings.
+
+## [fd](https://github.com/sharkdp/fd)
+A simple, fast and user-friendly alternative to `find`
+
+## [taskwarrior](https://taskwarrior.org/)
+Taskwarrior manages your TODO list from your command line. It is flexible, fast, efficient, unobtrusive, does its job then gets out of your way.
+
+#### [bugwarrior](https://bugwarrior.readthedocs.io/en/latest/)
+`bugwarrior` is a command line utility for updating your local [taskwarrior](http://taskwarrior.org) database from your forge issue trackers.
+
+There are lot of supported services like Jira, GitHub, GitLab etc.
+
+## [direnv](https://direnv.net/)
+Load and unload environment variables depending on the current directory.
+
+- and other less important stuff
+
+
+
+## updates
+- rofi (new theme)
+- dotgit (new filelist syntax)
+-  polybar - new widgets (list active ssh sessions and running docker containers)
+![[docker_ssh_widgets.png]]
+
+## TODO:
+- split this README.md sections into dedicated pages per tool
