@@ -388,11 +388,11 @@ _fzf_compgen_dir() {
 
 This assumes the usual keybindgs:
 - `CTRL + T` - search file under current directory
-![[fzf_search_file.png]]
+![fzf_search](docs/images/fzf_search_file.png)
 - `CTRL + R` - search full history
-![[fzf_history.png]]
+![fzf_history](docs/images/fzf_history.png)
 - `ALT + C` - change directory
-![[fzf_change_dir.png]]
+![fzf_change_dir](docs/images/fzf_change_dir.png)
 
 
 ## zsh - new plugins
@@ -429,10 +429,10 @@ It suggests commands as you type based on history and completions.
 ### [forgit](https://github.com/wfxr/forgit)
  A utility tool powered by fzf for using git interactively.
  Here's example of searching git commits containing keyword `Dockerfile` since tag v1.5.0
- ![[fzf_forgit_glog.png]]
+ ![fzf_forgit_glog](docs/images/fzf_forgit_glog.png)
  
  Here's example of staging files, filtering first `src/` subdir and selecting relevant ones
- ![[fzf_forgit_add.png]]
+ ![fzf_forgit_add](docs/images/fzf_forgit_add.png)
  
  In both cases preview and layout can be customized independently
  
@@ -440,9 +440,9 @@ It suggests commands as you type based on history and completions.
 t enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
 
 Example of invalid (red) and valid (green) syntax.
- ![[zsh_invalid_syntax.png]]
+ ![zsh_invalid_syntax](docs/images/zsh_invalid_syntax.png)
  
- ![[zsh_valid_syntax.png]]
+ ![zsh_valid_syntax](docs/images/zsh_valid_syntax.png)
  
  ### [git-open](https://github.com/paulirish/git-open)
  Type `git open` to open the repo website (GitHub, GitLab, Bitbucket) in your browser.
@@ -479,7 +479,7 @@ call plug#end()
 #### [onedark](https://github.com/joshdick/onedark.vim)
 Dark vim theme with simple colors
 
-![[vim_onedark.png]]
+![vim_onedark](docs/images/vim_onedark.png)
 
 
 #### [vim-polyglot](https://github.com/sheerun/vim-polyglot)
@@ -542,11 +542,28 @@ There are lot of supported services like Jira, GitHub, GitLab etc.
 Load and unload environment variables depending on the current directory.
 
 ## updates
-- rofi (new theme)
+### rofi
+- new theme syntax
+- adapted old pre 1.6.1 release themes -> check commit 1ef23f610940e6e2f399a4a9ea071f84b6fd7fc8
+
+### dotgit
 - dotgit (new filelist syntax)
+![dotfiles_structure](docs/images/dotfiles_structure.png)
+- pc046 -> work machine
+- cerebrum -> home PC
+- cerebellum -> home rPI
+- servers -> any public machine from which these dotfiles will be fetched
+- **categories:**
+	- common -> common to desktop machines
+	- cerebellum -> specific to rPI (arm arch)
+	- headless -> mostly utility UNIX configs
+
+
+### polybar
 -  polybar - new widgets (list active ssh sessions and running docker containers)
-![[docker_ssh_widgets.png]]
+![docker_ssh_widgets](docs/images/docker_ssh_widgets.png)
 
 ## TODO:
 - split this README.md sections into dedicated pages per tool
 - add zoho API for syncing issues with bugwarrior
+- polybar widget for taskwarrior
