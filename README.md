@@ -388,8 +388,11 @@ _fzf_compgen_dir() {
 
 This assumes the usual keybindgs:
 - `CTRL + T` - search file under current directory
+![[fzf_search_file.png]]
 - `CTRL + R` - search full history
+![[fzf_history.png]]
 - `ALT + C` - change directory
+![[fzf_change_dir.png]]
 
 
 ## zsh - new plugins
