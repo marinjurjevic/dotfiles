@@ -1,0 +1,11 @@
+[module/tasks]
+type = custom/script
+
+format = <label>
+label = %output%
+format-prefix =  
+format-prefix-foreground = ${colors.orange}
+exec = ~/.config/polybar/scripts/task_count.sh
+interval = 1
+
+click-left = ~/.config/rofi/scripts/ssh_sessions_menu.sh
