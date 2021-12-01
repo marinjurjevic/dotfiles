@@ -188,6 +188,7 @@ headless=alias,zsh,vim,git
 #--------------#
 
 .local/bin/blurlock
+.local/bin/log_serial
 .local/bin/ssh_sessions
 
 #-----------------#

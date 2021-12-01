@@ -1,0 +1,27 @@
+#!/bin/sh
+
+if [ $# -lt 1 ]; then
+    echo "Bad syntax. Usage: $0 <log_folder>"
+    exit 1
+fi
+
+if [ ! -d $1 ]; then
+    echo "Directory '$1' doesn't exist"
+    exit 2
+fi
+
+log_dir=$1/$(date +"%d-%m-%Y")
+echo $log_dir
+
+
+if [ ! -d $log_dir ]; then
+    echo "Folder \"$log_dir\" doesn't exist. Creating it"
+    if ! mkdir $log_dir; then
+        echo "Failed to create directory '$log_dir'"
+        exit 2
+    fi
+fi
+
+log_filename=$(date +"%H-%M-%S").log
+
+picocom -b 115200 /dev/ttyUSB0 --logfile $log_dir/$log_filename
