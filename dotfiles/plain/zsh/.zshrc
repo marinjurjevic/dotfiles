@@ -95,6 +95,7 @@ plugins=(
   rustup
   systemd
   taskwarrior
+  zoxide
   zsh-autosuggestions
   zsh-completions
   zsh-docker-aliases
