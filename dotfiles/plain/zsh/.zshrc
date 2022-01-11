@@ -84,15 +84,12 @@ forgit_checkout_branch=fgco
 plugins=(
   archlinux
   autojump
-#  colored-man-pages
-  cargo
   docker
   forgit
   fzf
   git
   git-open
   rust
-  rustup
   systemd
   taskwarrior
   zoxide
