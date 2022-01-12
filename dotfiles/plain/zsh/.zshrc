@@ -83,7 +83,6 @@ forgit_checkout_branch=fgco
 
 plugins=(
   archlinux
-  autojump
   docker
   forgit
   fzf
