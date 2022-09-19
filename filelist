@@ -81,6 +81,10 @@ headless=alias,zsh,vim,git
 .config/autorandr/home/postswitch:pc046
 .config/autorandr/home/setup:pc046
 
+.config/autorandr/home_split/config:pc046
+.config/autorandr/home_split/postswitch:pc046
+.config/autorandr/home_split/setup:pc046
+
 .config/autorandr/mobile/config:pc046
 .config/autorandr/mobile/postswitch:pc046
 .config/autorandr/mobile/setup:pc046
@@ -122,10 +126,12 @@ headless=alias,zsh,vim,git
 # polybar - pc046
 .config/polybar/launch.sh:pc046
 .config/polybar/launch_home.sh:pc046
+.config/polybar/launch_home_split.sh:pc046
 .config/polybar/launch_workstation.sh:pc046
 
 .config/polybar/config:pc046
 .config/polybar/config_home:pc046
+.config/polybar/config_split:pc046
 .config/polybar/config_workstation:pc046
 
 .config/polybar/modules/system/backlight:pc046
