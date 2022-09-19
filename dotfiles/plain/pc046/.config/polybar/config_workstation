@@ -19,6 +19,7 @@ include-file = ~/.config/polybar/modules/misc/chrome-current-track
 include-file = ~/.config/polybar/modules/misc/current-keyboard-layout
 include-file = ~/.config/polybar/modules/misc/powermenu
 include-file = ~/.config/polybar/modules/misc/dropbox-status
+include-file = ~/.config/polybar/modules/misc/nextcloud-status
 include-file = ~/.config/polybar/modules/misc/date
 include-file = ~/.config/polybar/modules/misc/arch-updates
 include-file = ~/.config/polybar/modules/misc/ssh
@@ -159,7 +160,7 @@ dpi = 92
 
 modules-left = i3 ssh docker tasks
 modules-center = date current-keyboard-layout
-modules-right = battery updates-arch-combined dropbox 
+modules-right = battery updates-arch-combined nextcloud dropbox 
 
 wm-restack = i3
 

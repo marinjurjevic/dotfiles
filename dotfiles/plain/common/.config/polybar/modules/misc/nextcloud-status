@@ -1,0 +1,11 @@
+[module/nextcloud]
+type = custom/script
+exec = ~/.config/polybar/scripts/nextcloud_status.sh
+interval = 5
+click-left = pcmanfm ~/Nextcloud &
+;tail = true
+
+; output by script...
+;format = <label>
+;format-foreground = #007ee5
+;label = 

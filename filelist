@@ -153,6 +153,7 @@ headless=alias,zsh,vim,git
 .config/polybar/modules/misc/current-keyboard-layout
 .config/polybar/modules/misc/date
 .config/polybar/modules/misc/dropbox-status
+.config/polybar/modules/misc/nextcloud-status
 .config/polybar/modules/misc/powermenu
 .config/polybar/modules/misc/title
 .config/polybar/modules/misc/volume
@@ -168,6 +169,7 @@ headless=alias,zsh,vim,git
 
 .config/polybar/scripts/chrome_current_track.sh
 .config/polybar/scripts/dropbox_status.sh
+.config/polybar/scripts/nextcloud_status.sh
 .config/polybar/scripts/updates_arch_combined.sh
 .config/polybar/scripts/ssh_sessions_count.sh
 .config/polybar/scripts/docker_running_containers_count.sh
