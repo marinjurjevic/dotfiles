@@ -421,6 +421,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id "sleep 2; nitrogen --restore; sleep 1; picom -b --experimental-backends --backend glx --xrender-sync-fence"
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id dropbox-cli start
+exec --no-startup-id nextcloud --background
 
 # Start Logitech daemon for LED control
 exec --no-startup-id keyledsd
@@ -475,6 +476,7 @@ assign [class="spotify"] $ws2
 # enable floating mode
 for_window [class="Nm-connection-editor"] floating enable
 for_window [class="nrfconnect"] floating enable
+for_window [title="bevy"] floating enable, move window to output DP-4, move position center
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use

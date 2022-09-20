@@ -19,6 +19,7 @@ include-file = ~/.config/polybar/modules/misc/chrome-current-track
 include-file = ~/.config/polybar/modules/misc/current-keyboard-layout
 include-file = ~/.config/polybar/modules/misc/powermenu
 include-file = ~/.config/polybar/modules/misc/dropbox-status
+include-file = ~/.config/polybar/modules/misc/nextcloud-status
 include-file = ~/.config/polybar/modules/misc/date
 include-file = ~/.config/polybar/modules/misc/arch-updates
 include-file = ~/.config/polybar/modules/misc/ssh
@@ -176,7 +177,7 @@ height = 25
 dpi = 92
 
 modules-left = i3 
-modules-right = filesystem dropbox updates-arch-combined 
+modules-right = filesystem nextcloud dropbox updates-arch-combined 
 
 wm-restack = i3
 
